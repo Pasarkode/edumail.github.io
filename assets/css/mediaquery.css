@@ -1,43 +1,19 @@
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 580px) {
     /* ----- Footer ----- */
-    .sitemap .col-md-4 {
-        margin-bottom: 20px;
+    .hidden-small {
+        display: block;
     }
-    .sitemap, .social-footer {
-        float: none !important;
+    .tag-banner h1 {
+        font-size: 38px;
+        margin-bottom: 15px;
+    }
+    .box-login {
+        width: 274px;
+        padding: 40px 40px;
+    }
+    .circle-picture, .circle-picture img {
+        width: 96px;
+        height: 96px;
         margin: 0 auto;
-        text-align: center;
-    }
-}
-@media screen and (max-width: 550px) {
-    /* ----- Footer ----- */
-    .footer-gift li {
-        padding-right: 30px;
-        font-size: 11px;
-    }
-    .footer-gift i {
-        font-size: 20px;
-    }
-    .copyright p {
-        font-size: 9px;
-    }
-}
-@media screen and (max-width: 420px) {
-    /* ----- Footer ----- */
-    .footer-gift li {
-        padding-right: 10px;
-        font-size: 8px;
-    }
-    .footer-gift i {
-        font-size: 18px;
-    }
-    .footer-main h3 {
-        font-size: 13px;
-    }
-    .sitemap a, .social-footer a {
-        font-size: 11px;
-    }
-    .social-footer li {
-        padding-right: 5px;
     }
 }

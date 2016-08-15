@@ -14,10 +14,16 @@
 }
 .hidden-small {
 	display: none;
+	margin-bottom: 15px;
+	font-family: 'Open Sans', arial;
+    -webkit-font-smoothing: antialiased;
+    color: #555;
+    font-size: 18px;
+    font-weight: 400;
 }
 .box-login {
 	position: relative;
-	width: 274px;
+	width: 256px;
     padding: 20px 20px;
     margin: 0 auto;
     background-color: #f7f7f7;
@@ -95,4 +101,10 @@ input:-webkit-autofill {
 .btn-register a {
 	color: #427fed;
 	font-size: 14px;
+}
+.tagline {
+	margin: 0 0 10px;
+    color: #555;
+    font-size: 14px;
+    text-align: center;
 }
