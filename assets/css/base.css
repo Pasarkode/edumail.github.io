@@ -6,65 +6,13 @@
   src: local('Montserrat-Regular'), url(http://fonts.gstatic.com/s/montserrat/v7/zhcz-_WihjSQC0oHJ9TCYAzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    font-family: 'bebasneue', sans-serif;
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+    font-family: Arial, sans-serif;
     font-size: 12px;
     margin: 0;
     padding: 0;
     vertical-align: baseline;
     border: 0;
-    -webkit-text-size-adjust: auto;
-    -moz-text-size-adjust: auto;
-    -ms-text-size-adjust: auto;
-    -webkit-font-smoothing: antialiased;
 }
 article,
 aside,
@@ -97,31 +45,6 @@ a {
     vertical-align: baseline;
     text-decoration: none;
     color: #000;
-}
-body {
-    /*background: url('http://wardhanime.net/wp-content/uploads/2016/05/luffyrev2.png'), url('http://wardhanime.net/wp-content/uploads/2016/05/jinberev2.png') #FAFAFA;
-    background-repeat: no-repeat;
-    background-position: top left, top right;
-    background-attachment: fixed;*/
-}
-/* Color */
-.border-red {
-    border-left: 6px solid #fc7f6f !important;
-}
-.border-blue {
-    border-left: 6px solid #84cdfc !important;
-}
-.border-yellow {
-    border-left: 6px solid #f1e88e !important;
-}
-.border-green {
-    border-left: 6px solid #3fd1cd !important;
-}
-.border-purple {
-    border-left: 6px solid #d9bed9 !important;
-}
-.border-light-blue {
-  border-left: 6px solid #acedee;
 }
 .clearfix:before,
 .clearfix:after {
@@ -268,19 +191,6 @@ body {
     .col-md-1 {
         width: 8.33333333%;
     }
-}
-/* Color */
-.red {
-    color: #dc483b;
-}
-.panel-red {
-    background-color: #dc483b;
-}
-.black {
-    color: #232323;
-}
-.panel-black {
-    background-color: #232323;
 }
 @font-face {
     font-family: 'FontAwesome';

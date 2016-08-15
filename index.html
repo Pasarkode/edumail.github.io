@@ -12,7 +12,7 @@
     <!-- Mandatory Files -->
     <link rel="shortcut icon" href="assets/images/brand_01.png">
     <!-- Logo -->
-    <link rel="stylesheet" href="assets/css/bootstrap.css"> <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/base.css"> <!-- Base -->
     <link rel="stylesheet" href="assets/css/header.css"> <!-- Header -->
     <link rel="stylesheet" href="assets/css/footer.css"> <!-- Footer -->
     <link rel="stylesheet" href="assets/css/styles.css"> <!-- Styles -->
@@ -21,11 +21,46 @@
     <script src="assets/js/jquery-1.10.2.min.js"></script>
   </head>
   <body>
-    <header id="main-header">
+    <header>
+      <div class="header-inner clearfix">
+        <div class="logo-login">
+          <img src="https://ssl.gstatic.com/images/branding/googlelogo/2x/googlelogo_color_112x36dp.png" alt="Edumail"/>
+        </div>
+      </div>
     </header>
-    <div class="main">
-    </div>
+    <main>
+      <div class="main-inner">
+        <div class="tag-banner">
+          <h1>One account. All of Edumail.</h1>
+          <h2 class="hidden-small">Sign in to continue to Edumail</h1>
+        </div>
+        <div class="box-login">
+          <div class="circle-picture">
+            <img src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" alt=""/>
+          </div>
+          <form action="">
+            <input id="email" name="email" type="email" placeholder="Input your email"></input>
+            <input id="password" name="password" type="password" placeholder="Password"></input>
+            <input id="signin" name="signin" class="button-signin" type="submit" value="Sign In">
+          </form>
+          <div class="forgot-btn">
+            <a href="#">Forgot password?</a>
+          </div>
+        </div>
+        <div class="btn-register">
+          <a href="#">Create account</a>
+        </div>
+      </div>
+    </main>
     <footer>
+      <div class="footer-inner clearfix">
+        <ul>
+          <li><a href="#">About Edumail</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
