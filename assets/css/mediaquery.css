@@ -3,6 +3,9 @@
     .hidden-small {
         display: block;
     }
+    .back-arrow {
+        top: 40px;
+    }
     .tag-banner h1 {
         font-size: 38px;
         margin-bottom: 15px;
