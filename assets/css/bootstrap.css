@@ -6754,4 +6754,15 @@ button.close {
     display: none !important;
   }
 }
+.clearfix:before,
+.clearfix:after {
+    display: block;
+    content: '';
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
 /*# sourceMappingURL=bootstrap.css.map */
