@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="assets/css/mediaquery.css"> <!-- Media Query -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
     <!-- Style Level Files -->
-    <script src="assets/js/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/jquery-1.12.3.min.js"></script>
   </head>
   <body>
     <header>
@@ -36,13 +36,19 @@
           <h2 class="hidden-small">Sign in to continue to Edumail</h1>
         </div>
         <div class="box-login">
+          <img id="back-arrow" class="back-arrow shift-form" src="https://www.gstatic.com/images/icons/material/system/1x/arrow_back_grey600_24dp.png" alt="Back">
           <div class="circle-picture">
             <img src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" alt=""/>
           </div>
           <form action="">
-            <input id="email" name="email" type="email" placeholder="Input your email"></input>
-            <input id="password" name="password" type="password" placeholder="Password"></input>
-            <input id="signin" name="signin" class="button-signin" type="submit" value="Sign In">
+            <div class="first-panel">
+              <input id="email" name="email" type="email" placeholder="Input your email"></input>
+              <div id="next" name="next" class="button-signin">Next</div>
+            </div>
+            <div class="second-panel">
+              <input id="password" name="password" type="password" placeholder="Password"></input>
+              <input id="signin" name="signin" class="button-signin submit" type="submit" value="Sign In">
+            </div>
           </form>
           <div class="forgot-btn">
             <a href="#">Forgot password?</a>
@@ -64,5 +70,19 @@
         </ul>
       </div>
     </footer>
+    <script type="text/javascript">
+      $(document).ready(function(){
+          $("#next").click(function(){
+              $(".second-panel").slideToggle();
+              $(".first-panel").css("visibility", "hidden");
+              $(".back-arrow").css("display", "block");
+          });
+          $(".back-arrow").click(function(){
+              $(".second-panel").css("display", "none");
+              $(".first-panel").css("visibility", "visible");
+              $(".back-arrow").css("display", "none");
+          });
+      });
+    </script>
   </body>
 </html>
