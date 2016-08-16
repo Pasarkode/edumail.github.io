@@ -31,16 +31,35 @@
         </div>
       </div>
     </header>
-    <main>
+    <main class="main-register">
       <div class="main-inner">
-        <div class="tag-banner">
-          <h1>One account. All of Edumail.</h1>
-          <h2 class="hidden-small">Sign in to continue to Edumail</h1>
-        </div>
-        <div class="box-login">
-          <img id="back-arrow" class="back-arrow shift-form" src="https://www.gstatic.com/images/icons/material/system/1x/arrow_back_grey600_24dp.png" alt="Back">
-          <div class="circle-picture">
-            <img src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png" alt=""/>
+        <div class="box-register">
+          <h1>Create your Edumail Account</h1>
+          <div class="sign-up">
+            <div class="signup-box">
+              <form action="">
+                <div class="form-element">
+                  <fieldset>
+                    <legend><strong>Name</strong></legend>
+                    <label id="firstname-label" class="firstname">
+                      <input type="text" value="" name="FirstName" id="FirstName" placeholder="First">
+                    </label>
+                    <label id="lastname-label" class="lastname">
+                      <input type="text" value="" name="LastName" id="LastName" placeholder="Last">
+                    </label>
+                  </fieldset>
+                </div>
+                <div class="form-element">
+                  <fieldset>
+                    <label id="email-label">
+                      <strong>Choose your username</strong>
+                      <input type="text" maxlength="30" autocomplete="off" name="email" id="email" value="">
+                      <span class="span-email">@edumail.com</span>
+                    </label>
+                  </fieldset>
+                </div>
+              </form>
+            </div>
           </div>
           <form action="">
             <input id="email" name="email" type="text" placeholder="Input your email">
@@ -51,10 +70,6 @@
             <a href="#">Forgot password?</a>
           </div>
         </div>
-        <div class="btn-register">
-          <a href="register.html">Create account</a>
-        </div>
-        <p class="tagline">One Edumail Account for everything task</p>
       </div>
     </main>
     <footer class="footer-register">
