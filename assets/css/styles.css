@@ -1,5 +1,9 @@
+/*
+  Login Page
+-------------------------------------*/
 .main-inner {
-	padding: 0 10px 40px;
+	padding: 0 10px;
+	padding-bottom: 100px;
 }
 .tag-banner {
 	text-align: center;
@@ -79,6 +83,9 @@
     box-sizing: border-box;
 	z-index: 1;
 }
+#password {
+	margin-top: 0;
+}
 input:-webkit-autofill {
 	color: rgb(0, 0, 0);
 	background-color: rgb(250, 255, 189);
@@ -127,4 +134,11 @@ input:-webkit-autofill {
     color: #555;
     font-size: 14px;
     text-align: center;
+}
+/*
+  Register Page
+-------------------------------------*/
+.register-page {
+	background-color: #f1f1f1;
+    background-clip: padding-box;
 }

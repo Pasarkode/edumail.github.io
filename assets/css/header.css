@@ -1,4 +1,7 @@
-header {
+/*
+  Login Page
+-------------------------------------*/
+.header-login {
   height: 73px;
   overflow: hidden;
 }
@@ -14,4 +17,44 @@ header {
 .logo-login img {
   width: 116px;
   height: 38px;
+}
+/*
+  Register Page
+-------------------------------------*/
+.header-register {
+  height: 71px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.header-register .header-inner {
+  padding-right: 22px;
+  padding-left: 22px;
+}
+.logo-register {
+  width: 112px;
+  height: 36px;
+  margin: 17px auto;
+}
+.logo-register img {
+  width: 112px;
+  height: 36px;
+}
+.btn-signin-page {
+    margin: 26px 0;
+}
+.btn-signin-page a {
+  padding: 9px 11px;
+  color: #666;
+  font-size: 13px;
+  font-weight: normal;
+  border: 1px solid #dcdcdc;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  background-color: #f5f5f5;
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#f5f5f5),to(#f1f1f1));
+  background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+  background-image: -moz-linear-gradient(top,#f5f5f5,#f1f1f1);
+  background-image: -ms-linear-gradient(top,#f5f5f5,#f1f1f1);
+  background-image: -o-linear-gradient(top,#f5f5f5,#f1f1f1);
+  background-image: linear-gradient(top,#f5f5f5,#f1f1f1);
 }

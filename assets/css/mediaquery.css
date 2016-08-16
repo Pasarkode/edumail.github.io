@@ -1,5 +1,12 @@
 @media screen and (min-width: 580px) {
-    /* ----- Footer ----- */
+    /* ----- Header ----- */
+    .header-login {
+      height: 108px;
+    }
+    .logo-login {
+        margin: 40px auto 30px;
+    }
+    /* ----- Main ----- */
     .hidden-small {
         display: block;
     }
@@ -18,5 +25,11 @@
         width: 96px;
         height: 96px;
         margin: 0 auto;
+    }
+}
+@media screen and (max-height: 580px) {
+    /* ----- Footer ----- */
+    .footer-login, .footer-register {
+      position: inherit;
     }
 }

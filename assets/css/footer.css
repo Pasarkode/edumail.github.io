@@ -1,4 +1,7 @@
-footer {
+/*
+  Login Page
+-------------------------------------*/
+.footer-login, .footer-register {
   position: absolute;
   bottom: 0;
   height: 35px;
@@ -27,4 +30,16 @@ footer {
   color: #737373;
   font-weight: 400;
   cursor: pointer;
+}
+/*
+  Register Page
+-------------------------------------*/
+.footer-register {
+  border-top: 1px solid #ebebeb;
+}
+.footer-register li {
+  color: #999;
+}
+.footer-register a {
+  color: #333;
 }
