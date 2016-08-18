@@ -78,7 +78,7 @@
                   <fieldset>
                     <label id="phone-label">
                       <strong>Mobile Phone</strong>
-                      <input type="number" name="phone" id="phone" value="">
+                      <input type="tel" name="phone" id="phone" value="" maxlength="18" onkeypress='return event.charCode >= 0 && event.charCode <= 57'>
                       <span class="span-phone">+62</span>
                     </label>
                   </fieldset>
