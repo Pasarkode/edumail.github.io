@@ -35,11 +35,24 @@
           <h2 class="hidden-small">Sign in to continue to Edumail</h1>
         </div>
         <div class="box-login">
-          <img id="back-arrow" class="back-arrow shift-form" src="https://www.gstatic.com/images/icons/material/system/1x/arrow_back_grey600_24dp.png" alt="Back">
           <form action="">
-            <input id="email" name="email" type="text" placeholder="Input your email">
-            <input id="password" name="password" type="password" placeholder="Password"></input>
-            <input id="signin" name="signin" class="button-signin submit" type="submit" value="Sign In">
+            <div class="form-element">
+              <fieldset>
+                <label id="username-label">
+                  <strong>Your email</strong>
+                  <input type="text" maxlength="30" autocomplete="off" name="email" id="email" value="" placeholder="Email/Username">
+                </label>
+              </fieldset>
+            </div>
+            <div class="form-element">
+              <fieldset>
+                <label id="password-label">
+                  <strong>Your password</strong>
+                  <input type="password" name="password" id="password" value="" placeholder="Password">
+                </label>
+              </fieldset>
+            </div>
+            <input id="signin" name="signin" class="button-signin submit" type="submit" value="Continue">
           </form>
           <div class="forgot-btn">
             <a href="#">Forgot password?</a>

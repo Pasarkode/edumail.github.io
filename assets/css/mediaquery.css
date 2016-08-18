@@ -19,7 +19,7 @@
     }
     .box-login {
         width: 274px;
-        padding: 40px 40px;
+        padding: 25px 40px 40px;
     }
     .circle-picture, .circle-picture img {
         width: 96px;
@@ -28,20 +28,24 @@
     }
 }
 @media screen and (max-height: 680px) {
-    /* ----- Footer ----- */
-    .register-page .footer-login, .footer-register {
-      position: inherit;
-    }
-    .register-page .main-inner {
-        padding-bottom: 50px;
-    }
-}
-@media screen and (max-height: 580px) {
+/*
+  Login Page
+-------------------------------------*/
     /* ----- Footer ----- */
     .login-page .footer-login, .footer-register {
       position: inherit;
     }
     .login-page .main-inner {
         padding-bottom: 100px;
+    }
+/*
+  Register Page
+-------------------------------------*/
+    /* ----- Footer ----- */
+    .register-page .footer-login, .footer-register {
+      position: inherit;
+    }
+    .register-page .main-inner {
+        padding-bottom: 50px;
     }
 }
