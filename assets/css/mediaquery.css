@@ -1,4 +1,7 @@
 @media screen and (min-width: 580px) {
+/*
+  Login Page
+-------------------------------------*/
     /* ----- Header ----- */
     .header-login {
       height: 108px;
@@ -7,12 +10,6 @@
         margin: 40px auto 30px;
     }
     /* ----- Main ----- */
-    .hidden-small {
-        display: block;
-    }
-    .back-arrow {
-        top: 40px;
-    }
     .tag-banner h1 {
         font-size: 38px;
         margin-bottom: 15px;
@@ -21,13 +18,14 @@
         width: 274px;
         padding: 25px 40px 40px;
     }
-    .circle-picture, .circle-picture img {
-        width: 96px;
-        height: 96px;
-        margin: 0 auto;
+/*
+  Verification Page
+-------------------------------------*/
+    .box-login .inputs {
+        width: 62px;
     }
 }
-@media screen and (max-height: 680px) {
+@media screen and (max-height: 520px) {
 /*
   Login Page
 -------------------------------------*/
@@ -38,6 +36,8 @@
     .login-page .main-inner {
         padding-bottom: 100px;
     }
+}
+@media screen and (max-height: 680px) {
 /*
   Register Page
 -------------------------------------*/

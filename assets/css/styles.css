@@ -17,8 +17,7 @@
     -webkit-font-smoothing: antialiased;
 }
 .hidden-small {
-	display: none;
-	margin-bottom: 15px;
+	margin-bottom: 30px;
 	font-family: 'Open Sans', arial;
     -webkit-font-smoothing: antialiased;
     color: #555;
@@ -238,4 +237,35 @@ input {
 	display: inline-block;
 	width: 107px;
 	margin-right: 5px;
+}
+/*
+  Verification Page
+-------------------------------------*/
+.account-help {
+	margin-bottom: 30px;
+	font-family: 'Open Sans', arial;
+    -webkit-font-smoothing: antialiased;
+    color: #555;
+    font-size: 16px;
+    font-weight: 400;
+}
+.verification-message {
+	font-size: 16px;
+}
+.verification-warn {
+	color: #737373;
+}
+.box-login .inputs {
+	display: inline-block;
+	width: 57px;
+	height: 57px;
+	margin: 20px 5px 40px 0;
+	font-size: 30px;
+	text-align: center;
+	border: none;
+	border-bottom: 1px solid #d9d9d9;
+	background-color: #f7f7f7;
+}
+.box-login .inputs:last-of-type {
+	margin-right: 0;
 }
