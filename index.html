@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="assets/css/mediaquery.css"> <!-- Media Query -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
     <!-- Style Level Files -->
+    <script src="assets/js/jquery-1.12.3.min.js"></script>
   </head>
   <body class="login-page">
     <header class="header-login">
@@ -48,6 +49,7 @@
                 <label id="password-label">
                   <strong>Your password</strong>
                   <input type="password" name="password" id="password" value="" placeholder="Password">
+                  <span class="pass-unhide"><img src="assets/images/eye_icon.png"></span>
                 </label>
               </fieldset>
             </div>
@@ -73,5 +75,17 @@
         </ul>
       </div>
     </footer>
+    <script>
+      $(document).ready(function() {
+        $(".pass-unhide").click(function() {
+          if ($("#password").attr("type") == "password") {
+            $("#password").attr("type", "text");
+
+          } else {
+            $("#password").attr("type", "password");
+          }
+        });
+      });
+    </script>
   </body>
 </html>
