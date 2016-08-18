@@ -2,8 +2,8 @@
   Login Page
 -------------------------------------*/
 .main-inner {
+	height: auto;
 	padding: 0 10px;
-	padding-bottom: 80px;
 }
 .tag-banner {
 	text-align: center;
@@ -95,7 +95,6 @@ input:-webkit-autofill {
 	height: 40px;
 	padding: 8px 0;
 	margin-bottom: 10px;
-	box-sizing: border-box;
     color: #fff;
     font-size: 13px;
     font-weight: 700;
