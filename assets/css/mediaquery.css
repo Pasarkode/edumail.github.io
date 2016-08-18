@@ -27,12 +27,21 @@
         margin: 0 auto;
     }
 }
-@media screen and (max-height: 580px) {
+@media screen and (max-height: 680px) {
     /* ----- Footer ----- */
-    .footer-login, .footer-register {
+    .register-page .footer-login, .footer-register {
       position: inherit;
     }
-    .main-inner {
+    .register-page .main-inner {
+        padding-bottom: 50px;
+    }
+}
+@media screen and (max-height: 580px) {
+    /* ----- Footer ----- */
+    .login-page .footer-login, .footer-register {
+      position: inherit;
+    }
+    .login-page .main-inner {
         padding-bottom: 100px;
     }
 }
