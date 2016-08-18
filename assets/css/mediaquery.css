@@ -1,3 +1,8 @@
+@media screen and (min-width: 580px) and (min-height: 580px) {
+    .footer-login {
+        position: relative;
+    }
+}
 @media screen and (min-width: 580px) {
     /* ----- Header ----- */
     .header-login {
