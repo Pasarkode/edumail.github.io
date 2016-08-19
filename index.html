@@ -17,11 +17,11 @@
     <link rel="stylesheet" href="assets/css/footer.css"> <!-- Footer -->
     <link rel="stylesheet" href="assets/css/styles.css"> <!-- Styles -->
     <link rel="stylesheet" href="assets/css/mediaquery.css"> <!-- Media Query -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
     <!-- Style Level Files -->
     <script src="assets/js/jquery-1.12.3.min.js"></script>
+    <script src="assets/js/angular.min.js"></script>
   </head>
-  <body class="login-page">
+  <body class="login-page" ng-app="">
     <header class="header-login">
       <div class="header-inner clearfix">
         <div class="logo-login">
@@ -35,12 +35,16 @@
           <h2 class="hidden-small">Sign in to use Edumail</h1>
         </div>
         <div class="box-login">
-          <form action="">
+          <span class="error-message" align="center">Your email or password is incorrect</span>
+          <form action="" name="myForm">
             <div class="form-element">
               <fieldset>
                 <label id="username-label">
                   <strong>Your email</strong>
-                  <input type="text" maxlength="30" autocomplete="off" name="email" id="email" value="" placeholder="Email/Username">
+                  <input type="email" maxlength="30" autocomplete="off" name="email" id="email" value="" placeholder="Your email" ng-model="email" required>
+                  <span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+                  <span ng-show="myForm.email.$error.required">Email is required.</span>
+                  <span ng-show="myForm.email.$error.email">Invalid email address.</span>
                 </label>
               </fieldset>
             </div>
@@ -53,9 +57,7 @@
                 </label>
               </fieldset>
             </div>
-            <a href="">
-              <input id="signin" name="signin" class="button-signin submit" type="button" value="Sign in">
-            </a>
+            <input id="signin" name="signin" class="button-signin submit" type="submit" value="Sign in" ng-disabled="myForm.email.$dirty && myForm.email.$invalid">
           </form>
           <div class="forgot-btn">
             <a href="forgot-password.html">Forgot password?</a>

@@ -17,10 +17,10 @@
     <link rel="stylesheet" href="assets/css/footer.css"> <!-- Footer -->
     <link rel="stylesheet" href="assets/css/styles.css"> <!-- Styles -->
     <link rel="stylesheet" href="assets/css/mediaquery.css"> <!-- Media Query -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
     <!-- Style Level Files -->
+    <script src="assets/js/angular.min.js"></script>
   </head>
-  <body class="register-page">
+  <body class="register-page" ng-app="">
     <header class="header-register">
       <div class="header-inner clearfix">
         <div class="logo-register pull-left">
@@ -37,7 +37,7 @@
           <h1>Create your Edumail Account</h1>
           <div class="sign-up">
             <div class="signup-box">
-              <form action="">
+              <form action="" name="myForm">
                 <div class="form-element">
                   <fieldset>
                     <legend><strong>Name</strong></legend>
@@ -53,8 +53,10 @@
                   <fieldset>
                     <label id="username-label">
                       <strong>Choose your username</strong>
-                      <input type="text" maxlength="30" autocomplete="off" name="email" id="email" value="">
+                      <input type="text" maxlength="30" autocomplete="off" name="email" id="email" value="" ng-model="email" required>
                       <span class="span-email">@edumail.id</span>
+                      <span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+                      <span ng-show="myForm.email.$error.required">Email is required.</span>
                     </label>
                   </fieldset>
                 </div>
@@ -62,7 +64,10 @@
                   <fieldset>
                     <label id="password-label">
                       <strong>Create a password</strong>
-                      <input type="password" name="password" id="password" value="">
+                      <input type="password" name="password" id="password" value="" ng-model="password" required>
+                      <span class="pass-unhide"><img src="assets/images/eye_icon.png"></span>
+                      <span style="color:red" ng-show="myForm.password.$dirty && myForm.password.$invalid ">
+                      <span ng-show="myForm.password.$error.required">Password is required.</span>
                     </label>
                   </fieldset>
                 </div>
@@ -70,7 +75,7 @@
                   <fieldset>
                     <label id="confirm-pass-label">
                       <strong>Confirm your password</strong>
-                      <input type="password" name="re-password" id="password" value="">
+                      <input type="password" name="re-password" id="password" value="" ng-model="repassword" required>
                     </label>
                   </fieldset>
                 </div>
@@ -83,9 +88,7 @@
                     </label>
                   </fieldset>
                 </div>
-                <a href="verification.html">
-                  <input id="signin" name="signin" class="button-signin submit" type="button" value="Continue">
-                </a>
+                <input id="signin" name="signin" class="button-signin submit" type="submit" value="Continue" ng-disabled="myForm.email.$dirty && myForm.email.$invalid && myForm.password.$dirty && myForm.repassword.$dirty">
               </form>
             </div>
           </div>

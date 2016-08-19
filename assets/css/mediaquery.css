@@ -16,7 +16,7 @@
     }
     .box-login {
         width: 274px;
-        padding: 25px 40px 40px;
+        padding: 25px 40px 30px;
     }
 /*
   Verification Page
@@ -25,7 +25,7 @@
         width: 62px;
     }
 }
-@media screen and (max-height: 520px) {
+@media screen and (max-height: 640px) {
 /*
   Login Page
 -------------------------------------*/
