@@ -276,3 +276,50 @@ input {
 .box-login .inputs:last-of-type {
 	margin-right: 0;
 }
+/*
+  Inbox Page
+-------------------------------------*/
+.main-inbox {
+	padding-top: 45px;
+}
+.main-inbox .main-inner {
+	padding: 0;
+}
+.search-box {
+	border-bottom: 1px solid #d9d9d9;
+}
+#search {
+	position: relative;
+	width: 100%;
+	height: 44px;
+	padding-left: 42px;
+	font-size: 16px;
+	font-weight: 300;
+	background: #fff;
+	border-radius: 1px;
+	border: none;
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+	z-index: 1;
+}
+.span-search {
+	position: absolute;
+	top: 55px;
+	left: 10px;
+    color: #999;
+    direction: ltr;
+    z-index: 99;
+}
+.span-search img {
+	width: 24px;
+	height: 24px;
+}
+.ui-mobile .ui-page {
+    margin-top: 89px;
+    background-color: #fff;
+    z-index: 99;
+}
+.ui-content {
+    padding: 0 !important;
+}

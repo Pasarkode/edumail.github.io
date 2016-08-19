@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="assets/css/mediaquery.css"> <!-- Media Query -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
     <!-- Style Level Files -->
+    <script src='assets/js/jquery-1.12.3.min.js'></script>
   </head>
   <body class="inbox-page">
     <header class="header-inbox">
@@ -39,50 +40,133 @@
         </div>
       </div>
     </header>
-    <main class="main-login">
+    <main class="main-inbox">
       <div class="main-inner">
-        <div class="tag-banner">
-          <h2 class="hidden-small">Sign in to use Edumail</h1>
+        <div class="search-box">
+          <input type="text" name="search" id="search" placeholder="Search">
+          <span class="span-search"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAABuElEQVRYw+2Vu27CMBSGvVBEgYHOLFzWgjoghJBAfQ4QPMUvcb++Aguor4FAVSEgaFH3CokHAJ6BIJEOdUxQQ1KbesvxRPyd8/nYOCHECSekBp7QxQx7qFCxh4IO4v9X/Bnv0EzGEtnbi9/jxbS4Pgbw3FL+AZ+W5TVoWCEgvvpz+ROGyCEEF+4QRh6jC4VYF4bN+ULi12wSazbfFztaPf0NXlPChyljMvyCD7Z671XGx7pY8P/v9b1PWHIp1kOMT9ClaUNbckzJNp9gRtNytmSBkhM+wZ6mhWzJCCW3fAKVprlsSTclD2KCuz8LjmJbFLYlo5Tc8QkUmpa3JYuUVPgEHZo2siVfKdniE8TZBUpacmnGPfLe5SVNXMN3lfFjQ6k5/7soy9Y2NVfAz67jCWmR9+mAKdZImWzOhs33iEjAg5XhszJGARG44UYURXa0GjSoCBKxQOBCYT70K9kU7aJvUfyEHoLsV0O0jwwWpuXnP0dreFInooEY2phgiwOO2EFB6/yBQcugqBEZgaZ8RcOgqMpR1A2KihxFzaAoy1eU5Ciq8hUVyQJCUJZanhBCUJJa3gkn5MU32wIWlbA5fE0AAAAASUVORK5CYII="/></span>
         </div>
-        <div class="box-login">
-          <form action="">
-            <div class="form-element">
-              <fieldset>
-                <label id="username-label">
-                  <strong>Your email</strong>
-                  <input type="text" maxlength="30" autocomplete="off" name="email" id="email" value="" placeholder="Email/Username">
-                </label>
-              </fieldset>
-            </div>
-            <div class="form-element">
-              <fieldset>
-                <label id="password-label">
-                  <strong>Your password</strong>
-                  <input type="password" name="password" id="password" value="" placeholder="Password">
-                </label>
-              </fieldset>
-            </div>
-            <a href="">
-              <input id="signin" name="signin" class="button-signin submit" type="button" value="Sign in">
-            </a>
-          </form>
-          <div class="forgot-btn">
-            <a href="forgot-password.html">Forgot password?</a>
-          </div>
+        <div class="inbox-list">
+          <ul id="images">
+            <li>
+                <a href="https://www.pexels.com/photo/mist-misty-fog-foggy-7919/">
+                    <img src="https://pexels.imgix.net/photos/7919/pexels-photo.jpg?fit=crop&w=640&h=480" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="https://www.pexels.com/photo/landscape-nature-sunset-trees-479/">
+                    <img src="https://pexels.imgix.net/photos/479/landscape-nature-sunset-trees.jpg?fit=crop&w=640&h=480" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="https://www.pexels.com/photo/landscape-sun-trees-path-21008/">
+                    <img src="https://pexels.imgix.net/photos/21008/pexels-photo.jpg?fit=crop&w=640&h=480" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="https://www.pexels.com/photo/cold-snow-landscape-nature-1127/">
+                    <img src="https://pexels.imgix.net/photos/1127/cold-snow-landscape-nature.jpg?fit=crop&w=640&h=480" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="https://www.pexels.com/photo/coastline-aerial-view-sea-9148/">
+                    <img src="https://pexels.imgix.net/photos/9148/pexels-photo.jpeg?fit=crop&w=640&h=480" alt="" />
+                </a>
+            </li>
+          </ul>
         </div>
-        <a class="btn-register" href="register.html">Create account</a>
-        <p class="tagline">One Edumail Account for everything task</p>
       </div>
     </main>
-    <footer class="footer-login">
-      <div class="footer-inner clearfix">
-        <ul>
-          <li><a href="#">About Edumail</a></li>
-          <li><a href="#">Privacy</a></li>
-          <li><a href="#">Terms</a></li>
-          <li><a href="#">Help</a></li>
-        </ul>
-      </div>
-    </footer>
+    <script>
+      (function($){
+        $.fn.endlessScroll = function(options) {
+          var defaults = {
+            bottomPixels: 50,
+            fireOnce: true,
+            fireDelay: 150,
+            loader: "<br />Loading...<br />",
+            data: "",
+            insertAfter: "div:last",
+            resetCounter: function() { return false; },
+            callback: function() { return true; },
+            ceaseFire: function() { return false; }
+          };
+
+          var options = $.extend({}, defaults, options);
+
+          var firing       = true;
+          var fired        = false;
+          var fireSequence = 0;
+
+          if (options.ceaseFire.apply(this) === true) {
+            firing = false;
+          }
+
+          if (firing === true) {
+            $(this).scroll(function() {
+              if (options.ceaseFire.apply(this) === true) {
+                firing = false;
+                return; // Scroll will still get called, but nothing will happen
+              }
+
+              if (this == document || this == window) {
+                var is_scrollable = $(document).height() - $(window).height() <= $(window).scrollTop() + options.bottomPixels;
+              } else {
+                // calculates the actual height of the scrolling container
+                var inner_wrap = $(".endless_scroll_inner_wrap", this);
+                if (inner_wrap.length == 0) {
+                  inner_wrap = $(this).wrapInner("<div class=\"endless_scroll_inner_wrap\" />").find(".endless_scroll_inner_wrap");
+                }
+                var is_scrollable = inner_wrap.length > 0 &&
+                  (inner_wrap.height() - $(this).height() <= $(this).scrollTop() + options.bottomPixels);
+              }
+
+              if (is_scrollable && (options.fireOnce == false || (options.fireOnce == true && fired != true))) {
+                if (options.resetCounter.apply(this) === true) fireSequence = 0;
+
+                fired = true;
+                fireSequence++;
+
+                $(options.insertAfter).after("<div id=\"endless_scroll_loader\">" + options.loader + "</div>");
+
+                data = typeof options.data == 'function' ? options.data.apply(this, [fireSequence]) : options.data;
+
+                if (data !== false) {
+                  $(options.insertAfter).after("<div id=\"endless_scroll_data\">" + data + "</div>");
+                  $("div#endless_scroll_data").hide().fadeIn();
+                  $("div#endless_scroll_data").removeAttr("id");
+
+                  options.callback.apply(this, [fireSequence]);
+
+                  if (options.fireDelay !== false || options.fireDelay !== 0) {
+                    $("body").after("<div id=\"endless_scroll_marker\"></div>");
+                    // slight delay for preventing event firing twice
+                    $("div#endless_scroll_marker").fadeTo(options.fireDelay, 1, function() {
+                      $(this).remove();
+                      fired = false;
+                    });
+                  }
+                  else {
+                    fired = false;
+                  }
+                }
+
+                $("div#endless_scroll_loader").remove();
+              }
+            });
+          }
+        };
+      })(jQuery);
+      // Script
+      $(document).ready(function() {
+          $(document).endlessScroll({
+              inflowPixels: 300,
+              callback: function() {
+            var $img = $('#images li:nth-last-child(5)').clone();
+            $('#images').append($img);
+              }
+          });
+      });
+    </script>
   </body>
 </html>
