@@ -301,6 +301,10 @@ input.glyphicon {
    content: "\e006";
    color: #FFD153;
 }
+.glyphicon::after {
+   content: "<- BORING!";
+   color: red;
+}
 input[type=checkbox].glyphicon{
     visibility: hidden;
 }
