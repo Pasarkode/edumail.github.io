@@ -292,7 +292,7 @@ input {
 /*
   Compose Page
 -------------------------------------*/
-.enter-mail-id {
+.enter-mail-id, .enter-cc-id {
 	border: 1px solid #fff;
 }
 span.email-ids {
