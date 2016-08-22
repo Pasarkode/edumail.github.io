@@ -20,7 +20,6 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
     <!-- Style Level Files -->
     <script src='assets/js/jquery-1.12.3.min.js'></script>
-    <script src='assets/js/jquery.jscroll.min.js'></script>
   </head>
   <body class="inbox-page">
     <header class="header-inbox">
@@ -47,8 +46,8 @@
           <input type="text" name="search" id="search" placeholder="Search">
           <span class="span-search"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAABuElEQVRYw+2Vu27CMBSGvVBEgYHOLFzWgjoghJBAfQ4QPMUvcb++Aguor4FAVSEgaFH3CokHAJ6BIJEOdUxQQ1KbesvxRPyd8/nYOCHECSekBp7QxQx7qFCxh4IO4v9X/Bnv0EzGEtnbi9/jxbS4Pgbw3FL+AZ+W5TVoWCEgvvpz+ROGyCEEF+4QRh6jC4VYF4bN+ULi12wSazbfFztaPf0NXlPChyljMvyCD7Z671XGx7pY8P/v9b1PWHIp1kOMT9ClaUNbckzJNp9gRtNytmSBkhM+wZ6mhWzJCCW3fAKVprlsSTclD2KCuz8LjmJbFLYlo5Tc8QkUmpa3JYuUVPgEHZo2siVfKdniE8TZBUpacmnGPfLe5SVNXMN3lfFjQ6k5/7soy9Y2NVfAz67jCWmR9+mAKdZImWzOhs33iEjAg5XhszJGARG44UYURXa0GjSoCBKxQOBCYT70K9kU7aJvUfyEHoLsV0O0jwwWpuXnP0dreFInooEY2phgiwOO2EFB6/yBQcugqBEZgaZ8RcOgqMpR1A2KihxFzaAoy1eU5Ciq8hUVyQJCUJZanhBCUJJa3gkn5MU32wIWlbA5fE0AAAAASUVORK5CYII="/></span>
         </div>
-        <div class="inbox-list scroll">
-          <ul>
+        <div class="inbox-list">
+          <ul id="images">
             <li>
                 <div class="inbox-box">
                   <div class="row-1 clearfix">
@@ -63,8 +62,117 @@
                       <span class="time-clock">Senin</span>
                     </div>
                   </div>
-                  <div class="row-2">
-                    
+                </div>
+            </li>
+            <li>
+                <div class="inbox-box">
+                  <div class="row-1 clearfix">
+                    <div class="title-name pull-left">
+                      <span class="from-name">New categoried mail</span>
+                      <span class="text-count">4</span>
+                    </div>
+                    <div class="time pull-right">
+                      <div class="attach-icon clearfix">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAQAAADdCbXSAAABE0lEQVR4AZ2SA2incRiA3zob4RTOF86XLtv9w2FGNqY8K8x+amlpeVbuy/OXZ3xhXpjxrr/NnvTq+VFw84laJtCY2GeYJMSOYOcauRyiKDtMRMVE7dDLHafgJgaKRQZvkJi4ho0llC6noBNlgEdIXDxiFeW38J1zLL/xNwyzj4bE9On7i9IstKHYfNKv2EGxwpy/26fzPsqYMM8+13zSdmF2jIewCzhhwi9tYkUb9TlCrV1gBgmuIVF5zhLKF2GaQ+74FGpRSqMoXpHKJkozIlSjpPpdjd0cnXMquIkI7zlhiUd+l9OMiYblEINmfnm/cgOKwVMkEZxfeQBlkwLeJyYQrlHNCRodzNACO68owsCMV3AF96b3Vq62HbwAAAAASUVORK5CYII=">
+                      </div>
+                      <span class="time-clock">Selasa</span>
+                    </div>
+                  </div>
+                </div>
+            </li>
+            <li>
+                <div class="inbox-box">
+                  <div class="row-1 clearfix">
+                    <div class="title-name pull-left">
+                      <span class="from-name">New categoried mail</span>
+                      <span class="text-count">4</span>
+                    </div>
+                    <div class="time pull-right">
+                      <div class="attach-icon clearfix">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAQAAADdCbXSAAABE0lEQVR4AZ2SA2incRiA3zob4RTOF86XLtv9w2FGNqY8K8x+amlpeVbuy/OXZ3xhXpjxrr/NnvTq+VFw84laJtCY2GeYJMSOYOcauRyiKDtMRMVE7dDLHafgJgaKRQZvkJi4ho0llC6noBNlgEdIXDxiFeW38J1zLL/xNwyzj4bE9On7i9IstKHYfNKv2EGxwpy/26fzPsqYMM8+13zSdmF2jIewCzhhwi9tYkUb9TlCrV1gBgmuIVF5zhLKF2GaQ+74FGpRSqMoXpHKJkozIlSjpPpdjd0cnXMquIkI7zlhiUd+l9OMiYblEINmfnm/cgOKwVMkEZxfeQBlkwLeJyYQrlHNCRodzNACO68owsCMV3AF96b3Vq62HbwAAAAASUVORK5CYII=">
+                      </div>
+                      <span class="time-clock">Rabu</span>
+                    </div>
+                  </div>
+                </div>
+            </li>
+            <li>
+                <div class="inbox-box">
+                  <div class="row-1 clearfix">
+                    <div class="title-name pull-left">
+                      <span class="from-name">New categoried mail</span>
+                      <span class="text-count">4</span>
+                    </div>
+                    <div class="time pull-right">
+                      <div class="attach-icon clearfix">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAQAAADdCbXSAAABE0lEQVR4AZ2SA2incRiA3zob4RTOF86XLtv9w2FGNqY8K8x+amlpeVbuy/OXZ3xhXpjxrr/NnvTq+VFw84laJtCY2GeYJMSOYOcauRyiKDtMRMVE7dDLHafgJgaKRQZvkJi4ho0llC6noBNlgEdIXDxiFeW38J1zLL/xNwyzj4bE9On7i9IstKHYfNKv2EGxwpy/26fzPsqYMM8+13zSdmF2jIewCzhhwi9tYkUb9TlCrV1gBgmuIVF5zhLKF2GaQ+74FGpRSqMoXpHKJkozIlSjpPpdjd0cnXMquIkI7zlhiUd+l9OMiYblEINmfnm/cgOKwVMkEZxfeQBlkwLeJyYQrlHNCRodzNACO68owsCMV3AF96b3Vq62HbwAAAAASUVORK5CYII=">
+                      </div>
+                      <span class="time-clock">Kamis</span>
+                    </div>
+                  </div>
+                </div>
+            </li>
+            <li>
+                <div class="inbox-box">
+                  <div class="row-1 clearfix">
+                    <div class="title-name pull-left">
+                      <span class="from-name">New categoried mail</span>
+                      <span class="text-count">4</span>
+                    </div>
+                    <div class="time pull-right">
+                      <div class="attach-icon clearfix">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAQAAADdCbXSAAABE0lEQVR4AZ2SA2incRiA3zob4RTOF86XLtv9w2FGNqY8K8x+amlpeVbuy/OXZ3xhXpjxrr/NnvTq+VFw84laJtCY2GeYJMSOYOcauRyiKDtMRMVE7dDLHafgJgaKRQZvkJi4ho0llC6noBNlgEdIXDxiFeW38J1zLL/xNwyzj4bE9On7i9IstKHYfNKv2EGxwpy/26fzPsqYMM8+13zSdmF2jIewCzhhwi9tYkUb9TlCrV1gBgmuIVF5zhLKF2GaQ+74FGpRSqMoXpHKJkozIlSjpPpdjd0cnXMquIkI7zlhiUd+l9OMiYblEINmfnm/cgOKwVMkEZxfeQBlkwLeJyYQrlHNCRodzNACO68owsCMV3AF96b3Vq62HbwAAAAASUVORK5CYII=">
+                      </div>
+                      <span class="time-clock">Jumat</span>
+                    </div>
+                  </div>
+                </div>
+            </li>
+            <li>
+                <div class="inbox-box">
+                  <div class="row-1 clearfix">
+                    <div class="title-name pull-left">
+                      <span class="from-name">New categoried mail</span>
+                      <span class="text-count">4</span>
+                    </div>
+                    <div class="time pull-right">
+                      <div class="attach-icon clearfix">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAQAAADdCbXSAAABE0lEQVR4AZ2SA2incRiA3zob4RTOF86XLtv9w2FGNqY8K8x+amlpeVbuy/OXZ3xhXpjxrr/NnvTq+VFw84laJtCY2GeYJMSOYOcauRyiKDtMRMVE7dDLHafgJgaKRQZvkJi4ho0llC6noBNlgEdIXDxiFeW38J1zLL/xNwyzj4bE9On7i9IstKHYfNKv2EGxwpy/26fzPsqYMM8+13zSdmF2jIewCzhhwi9tYkUb9TlCrV1gBgmuIVF5zhLKF2GaQ+74FGpRSqMoXpHKJkozIlSjpPpdjd0cnXMquIkI7zlhiUd+l9OMiYblEINmfnm/cgOKwVMkEZxfeQBlkwLeJyYQrlHNCRodzNACO68owsCMV3AF96b3Vq62HbwAAAAASUVORK5CYII=">
+                      </div>
+                      <span class="time-clock">Sabtu</span>
+                    </div>
+                  </div>
+                </div>
+            </li>
+            <li>
+                <div class="inbox-box">
+                  <div class="row-1 clearfix">
+                    <div class="title-name pull-left">
+                      <span class="from-name">New categoried mail</span>
+                      <span class="text-count">4</span>
+                    </div>
+                    <div class="time pull-right">
+                      <div class="attach-icon clearfix">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAQAAADdCbXSAAABE0lEQVR4AZ2SA2incRiA3zob4RTOF86XLtv9w2FGNqY8K8x+amlpeVbuy/OXZ3xhXpjxrr/NnvTq+VFw84laJtCY2GeYJMSOYOcauRyiKDtMRMVE7dDLHafgJgaKRQZvkJi4ho0llC6noBNlgEdIXDxiFeW38J1zLL/xNwyzj4bE9On7i9IstKHYfNKv2EGxwpy/26fzPsqYMM8+13zSdmF2jIewCzhhwi9tYkUb9TlCrV1gBgmuIVF5zhLKF2GaQ+74FGpRSqMoXpHKJkozIlSjpPpdjd0cnXMquIkI7zlhiUd+l9OMiYblEINmfnm/cgOKwVMkEZxfeQBlkwLeJyYQrlHNCRodzNACO68owsCMV3AF96b3Vq62HbwAAAAASUVORK5CYII=">
+                      </div>
+                      <span class="time-clock">Minggu</span>
+                    </div>
+                  </div>
+                </div>
+            </li>
+            <li>
+                <div class="inbox-box">
+                  <div class="row-1 clearfix">
+                    <div class="title-name pull-left">
+                      <span class="from-name">New categoried mail</span>
+                      <span class="text-count">4</span>
+                    </div>
+                    <div class="time pull-right">
+                      <div class="attach-icon clearfix">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAQAAADdCbXSAAABE0lEQVR4AZ2SA2incRiA3zob4RTOF86XLtv9w2FGNqY8K8x+amlpeVbuy/OXZ3xhXpjxrr/NnvTq+VFw84laJtCY2GeYJMSOYOcauRyiKDtMRMVE7dDLHafgJgaKRQZvkJi4ho0llC6noBNlgEdIXDxiFeW38J1zLL/xNwyzj4bE9On7i9IstKHYfNKv2EGxwpy/26fzPsqYMM8+13zSdmF2jIewCzhhwi9tYkUb9TlCrV1gBgmuIVF5zhLKF2GaQ+74FGpRSqMoXpHKJkozIlSjpPpdjd0cnXMquIkI7zlhiUd+l9OMiYblEINmfnm/cgOKwVMkEZxfeQBlkwLeJyYQrlHNCRodzNACO68owsCMV3AF96b3Vq62HbwAAAAASUVORK5CYII=">
+                      </div>
+                      <span class="time-clock">Senin</span>
+                    </div>
                   </div>
                 </div>
             </li>
@@ -281,11 +389,93 @@
       </div>
     </main>
     <script>
+      (function($){
+        $.fn.endlessScroll = function(options) {
+          var defaults = {
+            bottomPixels: 50,
+            fireOnce: true,
+            fireDelay: 150,
+            loader: "<br />Loading...<br />",
+            data: "",
+            insertAfter: "div:last",
+            resetCounter: function() { return false; },
+            callback: function() { return true; },
+            ceaseFire: function() { return false; }
+          };
+
+          var options = $.extend({}, defaults, options);
+
+          var firing       = true;
+          var fired        = false;
+          var fireSequence = 0;
+
+          if (options.ceaseFire.apply(this) === true) {
+            firing = false;
+          }
+
+          if (firing === true) {
+            $(this).scroll(function() {
+              if (options.ceaseFire.apply(this) === true) {
+                firing = false;
+                return; // Scroll will still get called, but nothing will happen
+              }
+
+              if (this == document || this == window) {
+                var is_scrollable = $(document).height() - $(window).height() <= $(window).scrollTop() + options.bottomPixels;
+              } else {
+                // calculates the actual height of the scrolling container
+                var inner_wrap = $(".endless_scroll_inner_wrap", this);
+                if (inner_wrap.length == 0) {
+                  inner_wrap = $(this).wrapInner("<div class=\"endless_scroll_inner_wrap\" />").find(".endless_scroll_inner_wrap");
+                }
+                var is_scrollable = inner_wrap.length > 0 &&
+                  (inner_wrap.height() - $(this).height() <= $(this).scrollTop() + options.bottomPixels);
+              }
+
+              if (is_scrollable && (options.fireOnce == false || (options.fireOnce == true && fired != true))) {
+                if (options.resetCounter.apply(this) === true) fireSequence = 0;
+
+                fired = true;
+                fireSequence++;
+
+                $(options.insertAfter).after("<div id=\"endless_scroll_loader\">" + options.loader + "</div>");
+
+                data = typeof options.data == 'function' ? options.data.apply(this, [fireSequence]) : options.data;
+
+                if (data !== false) {
+                  $(options.insertAfter).after("<div id=\"endless_scroll_data\">" + data + "</div>");
+                  $("div#endless_scroll_data").hide().fadeIn();
+                  $("div#endless_scroll_data").removeAttr("id");
+
+                  options.callback.apply(this, [fireSequence]);
+
+                  if (options.fireDelay !== false || options.fireDelay !== 0) {
+                    $("body").after("<div id=\"endless_scroll_marker\"></div>");
+                    // slight delay for preventing event firing twice
+                    $("div#endless_scroll_marker").fadeTo(options.fireDelay, 1, function() {
+                      $(this).remove();
+                      fired = false;
+                    });
+                  }
+                  else {
+                    fired = false;
+                  }
+                }
+
+                $("div#endless_scroll_loader").remove();
+              }
+            });
+          }
+        };
+      })(jQuery);
+      // Script
       $(document).ready(function() {
-          $(document).scroll(function(){
-            if (document.documentElement.clientHeight + $(window).scrollTop() >= $(document).height()) {
-              $(document).scrollTop(0);
-            }
+          $(document).endlessScroll({
+              inflowPixels: 300,
+              callback: function() {
+            var $img = $('#images li:nth-last-child(5)').clone();
+            $('#images').append($img);
+              }
           });
       });
     </script>

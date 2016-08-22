@@ -52,12 +52,14 @@
               <fieldset>
                 <label id="password-label">
                   <strong>Your password</strong>
-                  <input type="password" name="password" id="password" value="" placeholder="Password">
+                  <input type="password" name="password" id="password" value="" placeholder="Password" ng-model="password" required>
                   <span class="pass-unhide"><img src="assets/images/eye_icon.png"></span>
+                  <span style="color:red" ng-show="myForm.password.$dirty">
+                  <span ng-show="myForm.password.$error.required">Password is required.</span>
                 </label>
               </fieldset>
             </div>
-            <input id="signin" name="signin" class="button-signin submit" type="submit" value="Sign in" ng-disabled="myForm.email.$dirty && myForm.email.$invalid">
+            <input id="signin" name="signin" class="button-signin submit" type="submit" value="Sign in" ng-disabled="myForm.email.$dirty && myForm.email.$invalid && myForm.password.$dirty">
           </form>
           <div class="forgot-btn">
             <a href="forgot-password.html">Forgot password?</a>

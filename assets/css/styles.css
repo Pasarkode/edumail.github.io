@@ -378,3 +378,7 @@ input {
 .time-clock {
 	color: #15c;
 }
+.padding {
+    height: 1000px;
+    background-color: gray;
+}
