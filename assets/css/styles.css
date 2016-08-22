@@ -359,3 +359,22 @@ input [type="file"] {
 	float: left !important;
 	width: 30px !important;
 }
+/*
+  Inside Page
+-------------------------------------*/
+.tq.Dm {
+	background-color: #f1f1f1 !important;
+    border: none !important;
+}
+.tq>.M {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+.Gm {
+	float: right;
+	right: 10px;
+	top: 8px;
+}
+.Tm {
+    min-width: 25px !important;
+}
