@@ -367,6 +367,7 @@ input [type="file"] {
     border: none !important;
 }
 .tq>.M {
+	padding: 1px 0px 3px !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
 }
