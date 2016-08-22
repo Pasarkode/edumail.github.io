@@ -204,7 +204,7 @@ input {
 .agree {
 	float: left;
 	width: 15px;
-	height: 12px;
+	height: 14px;
 	padding: 0;
 }
 .sign-up select {
@@ -282,106 +282,10 @@ input {
 /*
   Inbox Page
 -------------------------------------*/
-.main-inbox {
-	padding-top: 45px;
-}
-.main-inbox .main-inner {
-	padding: 0;
-}
-.search-box {
-	border-bottom: 1px solid #d9d9d9;
-}
-#search {
+.checkbox-email {
 	position: relative;
-	width: 100%;
-	height: 44px;
-	padding-left: 42px;
-	font-size: 16px;
-	font-weight: 300;
-	background: #fff;
-	border-radius: 1px;
-	border: none;
-	-moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-	z-index: 1;
-}
-.span-search {
-	position: absolute;
-	top: 55px;
-	left: 10px;
-    color: #999;
-    direction: ltr;
-    z-index: 99;
-}
-.span-search img {
-	width: 24px;
-	height: 24px;
-}
-.inbox-box {
-    -webkit-user-select: none;
-    background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAQAAADYv8WvAAAAEElEQVR4AWP4D4QMDGoMagAQkgJLtGgMhgAAAABJRU5ErkJggg==) repeat-x bottom;
-    background-size: 2px 2px;
-    font-size: 13px;
-    margin-top: -1px;
-    min-height: 68px;
-    padding: 5px 6px 4px;
-    position: relative;
-    display: block;
-}
-.row-1 {
-	display: block;
-}
-.title-name {
-	font-size: 17px;
-    font-weight: 300;
-    height: 24px;
-    line-height: 24px;
-    margin-left: 23px;
-    margin-top: 4px;
-    font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif;
-    color: #060606;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-.from-name {
-    color: #060606;
-    font-size: 17px;
-    font-weight: 300;
-}
-.text-count {
-	font-size: 13px;
-    font-style: normal;
-    height: 17px;
-    line-height: 17px;
-    margin-top: 4px;
-    padding: 0 2px;
-    color: #888;
-}
-.time {
-	position: relative;
-	right: 5px;
-	width: 65px;
-	float: right;
-    font-size: 12px;
-    margin-top: 6px;
-    white-space: nowrap;
-    color: #15c;
-    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
-}
-.attach-icon {
-	float: left;
-	margin-right: 5px;
-}
-.attach-icon img {
-	width: 16px;
-    height: 8px;
-}
-.time-clock {
-	color: #15c;
-}
-.padding {
-    height: 1000px;
-    background-color: gray;
+	top: -3px;
+	left: -4px;
+	width: 14px;
+	height: 14px;
 }

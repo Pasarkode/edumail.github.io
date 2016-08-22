@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Edumail</title>
+<head>
+	<title>Edumail</title>
     <!-- Meta -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
@@ -12,282 +12,340 @@
     <!-- Mandatory Files -->
     <link rel="shortcut icon" href="assets/images/brand_01.png">
     <!-- Logo -->
-    <link rel="stylesheet" href="assets/css/base.css"> <!-- Base -->
     <link rel="stylesheet" href="assets/css/header.css"> <!-- Header -->
     <link rel="stylesheet" href="assets/css/footer.css"> <!-- Footer -->
     <link rel="stylesheet" href="assets/css/styles.css"> <!-- Styles -->
     <link rel="stylesheet" href="assets/css/mediaquery.css"> <!-- Media Query -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
     <!-- Style Level Files -->
-    <script src='assets/js/jquery-1.12.3.min.js'></script>
-    <script src='assets/js/jquery.jscroll.min.js'></script>
-  </head>
-  <body class="inbox-page">
-    <header class="header-inbox">
-      <div class="header-inner">
-        <div class="navigation">
-          <div class="nav-left btn-nav">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAALUlEQVRYw+3TQQ0AAAgDMaziXwR4IDxIaCdgr4sAOCZrZw7mB6BkJYPQlAy81nlmUh+H6wPpAAAAAElFTkSuQmCC"/>
-          </div>
-          <div class="nav-left btn-reload">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAA6CAQAAABLsoKjAAADCElEQVR4Ae3YA6wsWRjE8V7btm17t3qebdu2bdu2bdu2eW27h7WYPddoLV/nH+dUfslE87XEfyALNTcLtVALxZ24/W9C8Rk6Yx2uQwFBJOASlqAlXv6LUNyHZrgI5tAOFDMdRRU5BMyjnXgv0+pN3SgewypQTbKCOulJW4hOFK/JN8CMFXXVTWwZ1yyuTmIRVxZ6UBoJakQF+fs0rfLKlMArF7iLszmWEziXu2+cn+dfOykD248SPvDudKB4LL8PKCruXOrrXMe6fD3Dq5dZifMOXambmJ61RYM60fzrQFGT+LC9LM07cnj7hXPujACZyJh2FJVBUedoZSofp5RLt7Pmniv5PYZQ3FcwSkybxacM4V2U8uy7QcGG0EItxLCEM2iWKlJCNdljCC0eIIZLz/NxVWQTCFIfik/FrJLiKKGKFL+MfrT6UDGbdI63qyA7g4bRqifF7HBrFWRf0AS0dLR3VNrB5/NGA9vEnso+TWhBlxdtFElJRQ/lmBYU9Nb8GiXjaUSbXvgb0UIuL1r7xt+IVkn0oqXi/ka0VQD4Z89T0haaQWyPaULHbBPDch20otUPiG3nq5rQna3EsISPNhL3FlDEdvpiTShfrpMopiihBS3UQOzye66X0YZK8w6IcaEgPKiWxD1FQsSuazgf1IgmlSqviHn+JbhNHZp/oNjIPDpJ+5/tOzYeBSEaroZFGXjEokckX9eCin7uGpWOnYP78iBryE7xuoTDf6jOsyJqaJUUUCRfxE85gk9jVrqX3H2cj+lEeb/vhtIOMF1bUR73ZzoZv8M4OcPf7RU3+bWRA+rZm7sqKmCG7DiE2RiN8ViAvUgG02fzrPBhCaNX2/ORG1vGguoq7Th6kcXNOBUf9oxd6lvUlRcoe/qFx2zlp2bdp7exdMzeCUElHTmBhdz9Im6eYRc+aO75/xAburbuuTokrHZSIbfACrhrJvWL2Hw94QC78qW/5pvD7fyO7TjPsy/mlP9Z/7Mxp3iAC9mVNt7/139duY0P8/nfetj6eGWhFmpiFvorSRCjyPgL3nwAAAAASUVORK5CYII="/>
-          </div>
-        </div>
-        <div class="title-header">
-          Primary<span>10</span>
-        </div>
-        <div class="btn-compose">
-          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAAo0lEQVR4Ae3RVQECQACDYaQGngWnDNaACEgCqvBKArQDbsN1OMPvD/DtxGIyfULwoowBCrA/h/ehiWVF6QTx+gni9RNIgxNPZMDlNI8TOjnR1rx9D7ETEyXR156YqMIp4WlizbtUPE0oeO8OzxMJMc8TOp4nAk/k1W9PGb7xPr7237zH8Pfz7n/iKTVPXcvrB+oKfpaap9Q8peYpNU/peZNJ0RR+PKcuzW5CBwAAAABJRU5ErkJggg=="/>
-        </div>
-      </div>
-    </header>
-    <main class="main-inbox">
-      <div class="main-inner">
-        <div class="search-box">
-          <input type="text" name="search" id="search" placeholder="Search">
-          <span class="span-search"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAABuElEQVRYw+2Vu27CMBSGvVBEgYHOLFzWgjoghJBAfQ4QPMUvcb++Aguor4FAVSEgaFH3CokHAJ6BIJEOdUxQQ1KbesvxRPyd8/nYOCHECSekBp7QxQx7qFCxh4IO4v9X/Bnv0EzGEtnbi9/jxbS4Pgbw3FL+AZ+W5TVoWCEgvvpz+ROGyCEEF+4QRh6jC4VYF4bN+ULi12wSazbfFztaPf0NXlPChyljMvyCD7Z671XGx7pY8P/v9b1PWHIp1kOMT9ClaUNbckzJNp9gRtNytmSBkhM+wZ6mhWzJCCW3fAKVprlsSTclD2KCuz8LjmJbFLYlo5Tc8QkUmpa3JYuUVPgEHZo2siVfKdniE8TZBUpacmnGPfLe5SVNXMN3lfFjQ6k5/7soy9Y2NVfAz67jCWmR9+mAKdZImWzOhs33iEjAg5XhszJGARG44UYURXa0GjSoCBKxQOBCYT70K9kU7aJvUfyEHoLsV0O0jwwWpuXnP0dreFInooEY2phgiwOO2EFB6/yBQcugqBEZgaZ8RcOgqMpR1A2KihxFzaAoy1eU5Ciq8hUVyQJCUJZanhBCUJJa3gkn5MU32wIWlbA5fE0AAAAASUVORK5CYII="/></span>
-        </div>
-        <div class="inbox-list scroll">
-          <ul>
-            <li>
-                <div class="inbox-box">
-                  <div class="row-1 clearfix">
-                    <div class="title-name pull-left">
-                      <span class="from-name">New categoried mail</span>
-                      <span class="text-count">4</span>
-                    </div>
-                    <div class="time pull-right">
-                      <div class="attach-icon clearfix">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAQAAADdCbXSAAABE0lEQVR4AZ2SA2incRiA3zob4RTOF86XLtv9w2FGNqY8K8x+amlpeVbuy/OXZ3xhXpjxrr/NnvTq+VFw84laJtCY2GeYJMSOYOcauRyiKDtMRMVE7dDLHafgJgaKRQZvkJi4ho0llC6noBNlgEdIXDxiFeW38J1zLL/xNwyzj4bE9On7i9IstKHYfNKv2EGxwpy/26fzPsqYMM8+13zSdmF2jIewCzhhwi9tYkUb9TlCrV1gBgmuIVF5zhLKF2GaQ+74FGpRSqMoXpHKJkozIlSjpPpdjd0cnXMquIkI7zlhiUd+l9OMiYblEINmfnm/cgOKwVMkEZxfeQBlkwLeJyYQrlHNCRodzNACO68owsCMV3AF96b3Vq62HbwAAAAASUVORK5CYII=">
-                      </div>
-                      <span class="time-clock">Senin</span>
-                    </div>
-                  </div>
-                  <div class="row-2">
-                    
-                  </div>
-                </div>
-            </li>
-            <li>
-                <div class="inbox-box">
-                  <div class="row-1 clearfix">
-                    <div class="title-name pull-left">
-                      <span class="from-name">New categoried mail</span>
-                      <span class="text-count">4</span>
-                    </div>
-                    <div class="time pull-right">
-                      <div class="attach-icon clearfix">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAQAAADdCbXSAAABE0lEQVR4AZ2SA2incRiA3zob4RTOF86XLtv9w2FGNqY8K8x+amlpeVbuy/OXZ3xhXpjxrr/NnvTq+VFw84laJtCY2GeYJMSOYOcauRyiKDtMRMVE7dDLHafgJgaKRQZvkJi4ho0llC6noBNlgEdIXDxiFeW38J1zLL/xNwyzj4bE9On7i9IstKHYfNKv2EGxwpy/26fzPsqYMM8+13zSdmF2jIewCzhhwi9tYkUb9TlCrV1gBgmuIVF5zhLKF2GaQ+74FGpRSqMoXpHKJkozIlSjpPpdjd0cnXMquIkI7zlhiUd+l9OMiYblEINmfnm/cgOKwVMkEZxfeQBlkwLeJyYQrlHNCRodzNACO68owsCMV3AF96b3Vq62HbwAAAAASUVORK5CYII=">
-                      </div>
-                      <span class="time-clock">Selasa</span>
-                    </div>
-                  </div>
-                </div>
-            </li>
-            <li>
-                <div class="inbox-box">
-                  <div class="row-1 clearfix">
-                    <div class="title-name pull-left">
-                      <span class="from-name">New categoried mail</span>
-                      <span class="text-count">4</span>
-                    </div>
-                    <div class="time pull-right">
-                      <div class="attach-icon clearfix">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAQAAADdCbXSAAABE0lEQVR4AZ2SA2incRiA3zob4RTOF86XLtv9w2FGNqY8K8x+amlpeVbuy/OXZ3xhXpjxrr/NnvTq+VFw84laJtCY2GeYJMSOYOcauRyiKDtMRMVE7dDLHafgJgaKRQZvkJi4ho0llC6noBNlgEdIXDxiFeW38J1zLL/xNwyzj4bE9On7i9IstKHYfNKv2EGxwpy/26fzPsqYMM8+13zSdmF2jIewCzhhwi9tYkUb9TlCrV1gBgmuIVF5zhLKF2GaQ+74FGpRSqMoXpHKJkozIlSjpPpdjd0cnXMquIkI7zlhiUd+l9OMiYblEINmfnm/cgOKwVMkEZxfeQBlkwLeJyYQrlHNCRodzNACO68owsCMV3AF96b3Vq62HbwAAAAASUVORK5CYII=">
-                      </div>
-                      <span class="time-clock">Rabu</span>
-                    </div>
-                  </div>
-                </div>
-            </li>
-            <li>
-                <div class="inbox-box">
-                  <div class="row-1 clearfix">
-                    <div class="title-name pull-left">
-                      <span class="from-name">New categoried mail</span>
-                      <span class="text-count">4</span>
-                    </div>
-                    <div class="time pull-right">
-                      <div class="attach-icon clearfix">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAQAAADdCbXSAAABE0lEQVR4AZ2SA2incRiA3zob4RTOF86XLtv9w2FGNqY8K8x+amlpeVbuy/OXZ3xhXpjxrr/NnvTq+VFw84laJtCY2GeYJMSOYOcauRyiKDtMRMVE7dDLHafgJgaKRQZvkJi4ho0llC6noBNlgEdIXDxiFeW38J1zLL/xNwyzj4bE9On7i9IstKHYfNKv2EGxwpy/26fzPsqYMM8+13zSdmF2jIewCzhhwi9tYkUb9TlCrV1gBgmuIVF5zhLKF2GaQ+74FGpRSqMoXpHKJkozIlSjpPpdjd0cnXMquIkI7zlhiUd+l9OMiYblEINmfnm/cgOKwVMkEZxfeQBlkwLeJyYQrlHNCRodzNACO68owsCMV3AF96b3Vq62HbwAAAAASUVORK5CYII=">
-                      </div>
-                      <span class="time-clock">Kamis</span>
-                    </div>
-                  </div>
-                </div>
-            </li>
-            <li>
-                <div class="inbox-box">
-                  <div class="row-1 clearfix">
-                    <div class="title-name pull-left">
-                      <span class="from-name">New categoried mail</span>
-                      <span class="text-count">4</span>
-                    </div>
-                    <div class="time pull-right">
-                      <div class="attach-icon clearfix">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAQAAADdCbXSAAABE0lEQVR4AZ2SA2incRiA3zob4RTOF86XLtv9w2FGNqY8K8x+amlpeVbuy/OXZ3xhXpjxrr/NnvTq+VFw84laJtCY2GeYJMSOYOcauRyiKDtMRMVE7dDLHafgJgaKRQZvkJi4ho0llC6noBNlgEdIXDxiFeW38J1zLL/xNwyzj4bE9On7i9IstKHYfNKv2EGxwpy/26fzPsqYMM8+13zSdmF2jIewCzhhwi9tYkUb9TlCrV1gBgmuIVF5zhLKF2GaQ+74FGpRSqMoXpHKJkozIlSjpPpdjd0cnXMquIkI7zlhiUd+l9OMiYblEINmfnm/cgOKwVMkEZxfeQBlkwLeJyYQrlHNCRodzNACO68owsCMV3AF96b3Vq62HbwAAAAASUVORK5CYII=">
-                      </div>
-                      <span class="time-clock">Jumat</span>
-                    </div>
-                  </div>
-                </div>
-            </li>
-            <li>
-                <div class="inbox-box">
-                  <div class="row-1 clearfix">
-                    <div class="title-name pull-left">
-                      <span class="from-name">New categoried mail</span>
-                      <span class="text-count">4</span>
-                    </div>
-                    <div class="time pull-right">
-                      <div class="attach-icon clearfix">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAQAAADdCbXSAAABE0lEQVR4AZ2SA2incRiA3zob4RTOF86XLtv9w2FGNqY8K8x+amlpeVbuy/OXZ3xhXpjxrr/NnvTq+VFw84laJtCY2GeYJMSOYOcauRyiKDtMRMVE7dDLHafgJgaKRQZvkJi4ho0llC6noBNlgEdIXDxiFeW38J1zLL/xNwyzj4bE9On7i9IstKHYfNKv2EGxwpy/26fzPsqYMM8+13zSdmF2jIewCzhhwi9tYkUb9TlCrV1gBgmuIVF5zhLKF2GaQ+74FGpRSqMoXpHKJkozIlSjpPpdjd0cnXMquIkI7zlhiUd+l9OMiYblEINmfnm/cgOKwVMkEZxfeQBlkwLeJyYQrlHNCRodzNACO68owsCMV3AF96b3Vq62HbwAAAAASUVORK5CYII=">
-                      </div>
-                      <span class="time-clock">Sabtu</span>
-                    </div>
-                  </div>
-                </div>
-            </li>
-            <li>
-                <div class="inbox-box">
-                  <div class="row-1 clearfix">
-                    <div class="title-name pull-left">
-                      <span class="from-name">New categoried mail</span>
-                      <span class="text-count">4</span>
-                    </div>
-                    <div class="time pull-right">
-                      <div class="attach-icon clearfix">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAQAAADdCbXSAAABE0lEQVR4AZ2SA2incRiA3zob4RTOF86XLtv9w2FGNqY8K8x+amlpeVbuy/OXZ3xhXpjxrr/NnvTq+VFw84laJtCY2GeYJMSOYOcauRyiKDtMRMVE7dDLHafgJgaKRQZvkJi4ho0llC6noBNlgEdIXDxiFeW38J1zLL/xNwyzj4bE9On7i9IstKHYfNKv2EGxwpy/26fzPsqYMM8+13zSdmF2jIewCzhhwi9tYkUb9TlCrV1gBgmuIVF5zhLKF2GaQ+74FGpRSqMoXpHKJkozIlSjpPpdjd0cnXMquIkI7zlhiUd+l9OMiYblEINmfnm/cgOKwVMkEZxfeQBlkwLeJyYQrlHNCRodzNACO68owsCMV3AF96b3Vq62HbwAAAAASUVORK5CYII=">
-                      </div>
-                      <span class="time-clock">Minggu</span>
-                    </div>
-                  </div>
-                </div>
-            </li>
-            <li>
-                <div class="inbox-box">
-                  <div class="row-1 clearfix">
-                    <div class="title-name pull-left">
-                      <span class="from-name">New categoried mail</span>
-                      <span class="text-count">4</span>
-                    </div>
-                    <div class="time pull-right">
-                      <div class="attach-icon clearfix">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAQAAADdCbXSAAABE0lEQVR4AZ2SA2incRiA3zob4RTOF86XLtv9w2FGNqY8K8x+amlpeVbuy/OXZ3xhXpjxrr/NnvTq+VFw84laJtCY2GeYJMSOYOcauRyiKDtMRMVE7dDLHafgJgaKRQZvkJi4ho0llC6noBNlgEdIXDxiFeW38J1zLL/xNwyzj4bE9On7i9IstKHYfNKv2EGxwpy/26fzPsqYMM8+13zSdmF2jIewCzhhwi9tYkUb9TlCrV1gBgmuIVF5zhLKF2GaQ+74FGpRSqMoXpHKJkozIlSjpPpdjd0cnXMquIkI7zlhiUd+l9OMiYblEINmfnm/cgOKwVMkEZxfeQBlkwLeJyYQrlHNCRodzNACO68owsCMV3AF96b3Vq62HbwAAAAASUVORK5CYII=">
-                      </div>
-                      <span class="time-clock">Senin</span>
-                    </div>
-                  </div>
-                </div>
-            </li>
-            <li>
-                <div class="inbox-box">
-                  <div class="row-1 clearfix">
-                    <div class="title-name pull-left">
-                      <span class="from-name">New categoried mail</span>
-                      <span class="text-count">4</span>
-                    </div>
-                    <div class="time pull-right">
-                      <div class="attach-icon clearfix">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAQAAADdCbXSAAABE0lEQVR4AZ2SA2incRiA3zob4RTOF86XLtv9w2FGNqY8K8x+amlpeVbuy/OXZ3xhXpjxrr/NnvTq+VFw84laJtCY2GeYJMSOYOcauRyiKDtMRMVE7dDLHafgJgaKRQZvkJi4ho0llC6noBNlgEdIXDxiFeW38J1zLL/xNwyzj4bE9On7i9IstKHYfNKv2EGxwpy/26fzPsqYMM8+13zSdmF2jIewCzhhwi9tYkUb9TlCrV1gBgmuIVF5zhLKF2GaQ+74FGpRSqMoXpHKJkozIlSjpPpdjd0cnXMquIkI7zlhiUd+l9OMiYblEINmfnm/cgOKwVMkEZxfeQBlkwLeJyYQrlHNCRodzNACO68owsCMV3AF96b3Vq62HbwAAAAASUVORK5CYII=">
-                      </div>
-                      <span class="time-clock">Selasa</span>
-                    </div>
-                  </div>
-                </div>
-            </li>
-            <li>
-                <div class="inbox-box">
-                  <div class="row-1 clearfix">
-                    <div class="title-name pull-left">
-                      <span class="from-name">New categoried mail</span>
-                      <span class="text-count">4</span>
-                    </div>
-                    <div class="time pull-right">
-                      <div class="attach-icon clearfix">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAQAAADdCbXSAAABE0lEQVR4AZ2SA2incRiA3zob4RTOF86XLtv9w2FGNqY8K8x+amlpeVbuy/OXZ3xhXpjxrr/NnvTq+VFw84laJtCY2GeYJMSOYOcauRyiKDtMRMVE7dDLHafgJgaKRQZvkJi4ho0llC6noBNlgEdIXDxiFeW38J1zLL/xNwyzj4bE9On7i9IstKHYfNKv2EGxwpy/26fzPsqYMM8+13zSdmF2jIewCzhhwi9tYkUb9TlCrV1gBgmuIVF5zhLKF2GaQ+74FGpRSqMoXpHKJkozIlSjpPpdjd0cnXMquIkI7zlhiUd+l9OMiYblEINmfnm/cgOKwVMkEZxfeQBlkwLeJyYQrlHNCRodzNACO68owsCMV3AF96b3Vq62HbwAAAAASUVORK5CYII=">
-                      </div>
-                      <span class="time-clock">Rabu</span>
-                    </div>
-                  </div>
-                </div>
-            </li>
-            <li>
-                <div class="inbox-box">
-                  <div class="row-1 clearfix">
-                    <div class="title-name pull-left">
-                      <span class="from-name">New categoried mail</span>
-                      <span class="text-count">4</span>
-                    </div>
-                    <div class="time pull-right">
-                      <div class="attach-icon clearfix">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAQAAADdCbXSAAABE0lEQVR4AZ2SA2incRiA3zob4RTOF86XLtv9w2FGNqY8K8x+amlpeVbuy/OXZ3xhXpjxrr/NnvTq+VFw84laJtCY2GeYJMSOYOcauRyiKDtMRMVE7dDLHafgJgaKRQZvkJi4ho0llC6noBNlgEdIXDxiFeW38J1zLL/xNwyzj4bE9On7i9IstKHYfNKv2EGxwpy/26fzPsqYMM8+13zSdmF2jIewCzhhwi9tYkUb9TlCrV1gBgmuIVF5zhLKF2GaQ+74FGpRSqMoXpHKJkozIlSjpPpdjd0cnXMquIkI7zlhiUd+l9OMiYblEINmfnm/cgOKwVMkEZxfeQBlkwLeJyYQrlHNCRodzNACO68owsCMV3AF96b3Vq62HbwAAAAASUVORK5CYII=">
-                      </div>
-                      <span class="time-clock">Kamis</span>
-                    </div>
-                  </div>
-                </div>
-            </li>
-            <li>
-                <div class="inbox-box">
-                  <div class="row-1 clearfix">
-                    <div class="title-name pull-left">
-                      <span class="from-name">New categoried mail</span>
-                      <span class="text-count">4</span>
-                    </div>
-                    <div class="time pull-right">
-                      <div class="attach-icon clearfix">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAQAAADdCbXSAAABE0lEQVR4AZ2SA2incRiA3zob4RTOF86XLtv9w2FGNqY8K8x+amlpeVbuy/OXZ3xhXpjxrr/NnvTq+VFw84laJtCY2GeYJMSOYOcauRyiKDtMRMVE7dDLHafgJgaKRQZvkJi4ho0llC6noBNlgEdIXDxiFeW38J1zLL/xNwyzj4bE9On7i9IstKHYfNKv2EGxwpy/26fzPsqYMM8+13zSdmF2jIewCzhhwi9tYkUb9TlCrV1gBgmuIVF5zhLKF2GaQ+74FGpRSqMoXpHKJkozIlSjpPpdjd0cnXMquIkI7zlhiUd+l9OMiYblEINmfnm/cgOKwVMkEZxfeQBlkwLeJyYQrlHNCRodzNACO68owsCMV3AF96b3Vq62HbwAAAAASUVORK5CYII=">
-                      </div>
-                      <span class="time-clock">Jumat</span>
-                    </div>
-                  </div>
-                </div>
-            </li>
-            <li>
-                <div class="inbox-box">
-                  <div class="row-1 clearfix">
-                    <div class="title-name pull-left">
-                      <span class="from-name">New categoried mail</span>
-                      <span class="text-count">4</span>
-                    </div>
-                    <div class="time pull-right">
-                      <div class="attach-icon clearfix">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAQAAADdCbXSAAABE0lEQVR4AZ2SA2incRiA3zob4RTOF86XLtv9w2FGNqY8K8x+amlpeVbuy/OXZ3xhXpjxrr/NnvTq+VFw84laJtCY2GeYJMSOYOcauRyiKDtMRMVE7dDLHafgJgaKRQZvkJi4ho0llC6noBNlgEdIXDxiFeW38J1zLL/xNwyzj4bE9On7i9IstKHYfNKv2EGxwpy/26fzPsqYMM8+13zSdmF2jIewCzhhwi9tYkUb9TlCrV1gBgmuIVF5zhLKF2GaQ+74FGpRSqMoXpHKJkozIlSjpPpdjd0cnXMquIkI7zlhiUd+l9OMiYblEINmfnm/cgOKwVMkEZxfeQBlkwLeJyYQrlHNCRodzNACO68owsCMV3AF96b3Vq62HbwAAAAASUVORK5CYII=">
-                      </div>
-                      <span class="time-clock">Sabtu</span>
-                    </div>
-                  </div>
-                </div>
-            </li>
-            <li>
-                <div class="inbox-box">
-                  <div class="row-1 clearfix">
-                    <div class="title-name pull-left">
-                      <span class="from-name">New categoried mail</span>
-                      <span class="text-count">4</span>
-                    </div>
-                    <div class="time pull-right">
-                      <div class="attach-icon clearfix">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAQAAADdCbXSAAABE0lEQVR4AZ2SA2incRiA3zob4RTOF86XLtv9w2FGNqY8K8x+amlpeVbuy/OXZ3xhXpjxrr/NnvTq+VFw84laJtCY2GeYJMSOYOcauRyiKDtMRMVE7dDLHafgJgaKRQZvkJi4ho0llC6noBNlgEdIXDxiFeW38J1zLL/xNwyzj4bE9On7i9IstKHYfNKv2EGxwpy/26fzPsqYMM8+13zSdmF2jIewCzhhwi9tYkUb9TlCrV1gBgmuIVF5zhLKF2GaQ+74FGpRSqMoXpHKJkozIlSjpPpdjd0cnXMquIkI7zlhiUd+l9OMiYblEINmfnm/cgOKwVMkEZxfeQBlkwLeJyYQrlHNCRodzNACO68owsCMV3AF96b3Vq62HbwAAAAASUVORK5CYII=">
-                      </div>
-                      <span class="time-clock">Minggu</span>
-                    </div>
-                  </div>
-                </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </main>
-    <script>
-      $(document).ready(function() {
-          $(document).scroll(function(){
-            if (document.documentElement.clientHeight + $(window).scrollTop() >= $(document).height()) {
-              $(document).scrollTop(0);
-            }
-          });
-      });
-    </script>
-  </body>
+    <link rel="stylesheet" href="assets/css/mail.css"> <!-- Base -->
+    <script src="assets/js/jquery-1.12.3.min.js"></script>
+    <script src="assets/js/angular.min.js"></script>
+</head>
+<body>
+	<div id="menu" style="width: 100%; height: 100%;">
+		<!-- Header -->
+		<div class="fh">
+			<div class="Vm">
+				<div class="fc Cm Pm Rc qc Sc" id="mutbt" style="width: 100%;">
+					<div class="Tc"></div>
+					<div class="kc"></div>
+					<div class="zc" style="left: 0px; right: 42px;">
+						<div class="Bc" style="width: 42px;"></div>
+						<div class="Mn f"></div>
+						<div class="M j T b hc Nn q m">
+							<div class="V Y Rx Ig">arif@edumail.id</div>
+						</div>
+					</div>
+					<div class="lc">
+						<div class="go-settings M j T b hc Jm Gm">
+							<div class="V j Ud"></div>
+						</div>
+					</div>
+					<div class="Tc"></div>
+					<div class="Dn Hn"></div>
+				</div>
+			</div>
+		</div>
+		<!-- Menu -->
+		<div id="mn_" class="Qg">
+			<div class="Sg" style="bottom: 0px;">
+				<div class="Kg">
+					<div class="Sk">
+						<div class="bl">Inbox</div>
+						<div class="inbox-link Nk ec Ig">
+							<div class="Vk undefined" style="background:#737373;color:">10</div><div class="Hk"></div><div class="Pk"><div class="tg"></div></div>Primary
+						</div>
+						<div class="Nk ec Ig">
+							<div class="Hk"></div><div class="Pk"><div class="vg"></div></div>Promotions
+						</div>
+						<div class="bl">Labels</div>
+						<div class="Nk al ec">
+							<div class="Hk"></div>
+							<div class="Qk">Starred</div>
+						</div>
+						<div class="Nk al ec">
+							<div class="Hk"></div>
+							<span>Sent Mail</span>
+						</div>
+						<div class="Nk al ec">
+							<div class="Hk"></div>
+							<span>Drafts</span>
+						</div>
+						<div class="bl">More</div>
+						<div class="Nk al ec">
+							<div class="Hk"></div>
+							<span>All Mail</span>
+						</div>
+						<div class="Nk al ec">
+							<div class="Hk"></div>
+							<span>Trash</span>
+						</div>
+						<div class="Nk al ec">
+							<div class="Hk"></div>
+							<span>Spam</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="Tg"></div>
+			<div class="fc Cm Ug Rc qc Sc" id="mutbb" style="width: 100%; top: 44px;">
+				<div class="kc"></div>
+				<div class="zc" style="left: 0px; right: 0px;">
+					<div class=" Em ">
+						<div class="Ig">arif@edumail.id</div>
+					</div>
+				</div>
+				<div class="lc"></div>
+				<div class="Tc"></div>
+				<div class="Dn Hn In"> </div>
+			</div>
+		</div>
+	</div>
+	<div id="inbox">
+		<!-- Header -->
+		<div class="fh">
+			<div class="Vm">
+				<div class="fc Cm Pm Rc qc Sc" id="tltbt" style="width: 100%;">
+					<div class="kc">
+						<div class="M j T b hc o" style="display: none;">
+							<div class="V j Y Km Ig">...</div>
+						</div>
+						<div class="M j T b hc Jm Gm">
+							<div class="V j zd"></div>
+						</div>
+						<div class="M j T b hc Jm Gm">
+							<div class="V j ng"></div>
+						</div>
+					</div>
+					<div class="zc" style="left: 84px; right: 42px;">
+						<div class="Em">
+							<div class="Ig">Primary<span class="Rl">10</span></div>
+						</div>
+					</div>
+					<div class="lc">
+						<div class="M j T b hc Jm Ie">
+							<a href="compose.html">
+								<div class="V j od"></div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Content -->
+		<div id="tl_" class="Qg">
+			<div class="Sg" style="bottom: 0px;">
+				<!-- Mulai List -->
+				<div class="Kg Bm" style="min-height: 685px;">
+					<div class="ll" onclick="this.focus()"></div>
+					<!-- Kolom Search -->
+					<form class="wh">
+						<div class="Rd pl ql"></div>
+						<div class="tl">
+							<input type="search" autocomplete="off" autocorrect="off" class="jl  " placeholder="Search">
+						</div>
+						<div class="yl" style="display: block;">
+							<div class="M j T b hc wl Le N Bl xl" style="display: none;">
+								<div class="V j Y zl">Cancel</div>
+							</div>
+						</div>
+					</form>
+					<!-- Kolom Ads -->
+					<div class="Ap" style="display: block;">
+						<div class="Cp">
+							<div class="hm xh qm">
+								<div>
+									<div class="zp Fl">
+										<span dir="ltr">100TB</span>
+									</div>
+								</div>
+								<div class="Ll Dp">
+									<div class="M j T b hc S" style="display:none">
+										<div class="V j lm"></div>
+									</div>
+									<div class="M j T b hc S">
+										<div class="V j mm"></div>
+									</div>
+								</div>
+								<div class="Gl">
+									<div class="Pp">Ad</div>
+									<span dir="ltr">Private Cloud</span>
+								</div>
+								<div class="Bp Hl  Ig">
+									<span dir="ltr">The flexibility of a virtual server, with bare metal performance. Fully customizable.</span>
+								</div>
+								<div class="eo" tabindex="0"></div>
+								<div class="Fp">
+									<div class="M j Xj do h" onclick="_e(event, &#39;$c&#39;, &#39;ChMI1-u-ksnMzgIViS2dCh3_YgY6EAaYmOGuAgE&#39;)" role="button" tabindex="0">
+										<div class="V j">
+											<div class="Qp Yd"></div>
+										</div>
+									</div>
+								</div>
+								<div class="dq lq ce fq" style="display: none"></div>
+								<div class="M j Ep am Ie" style="display:none">
+									<div class="V j">Dismiss</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Kolom Email Masuk -->
+					<div class="dm">
+						<div id="th_1569cced70271fee" class="xh km">
+							<div class="El"></div>
+							<div class="Ol">
+								<div class="Bg Ql" style="visibility: hidden;"></div>
+							</div>
+							<div class="Pl">
+								<div class="Xj">
+									<div class="ag Kl"></div>
+									<span id="ti_d_1569cced70271fee">Yesterday</span>
+								</div>
+								<div class="Ig Fl">
+									<span id="ti_f_1569cced70271fee">triaji, me </span>
+									<span class="Il">4</span>
+								</div>
+							</div>
+							<div class="im">
+								<div class="M j Nl">
+									<div class="V j cb Ml">
+										<input type="checkbox" name="cek" value="trus" class="checkbox-email">
+									</div>
+								</div>
+								<div class="M j Ll">
+									<div class="V j mm pm"></div>
+								</div>
+								<div class=" Ig Gl" id="ti_s_1569cced70271fee">
+									<span>Logo Informasia</span>
+								</div>
+							</div>
+							<div class="jm">
+								<div class="Jl"></div>
+								<div class="Ig Hl" id="ti_b_1569cced70271fee">sama sama mas ^^ 2016-08-18 15:59 GMT+07:00 triaji permadi &lt;triaji.permadi@gmail.com&gt;: Siiip Arif :) Terima kasih ya.. 2016-08-18 15:54 GMT+07:00 Arif Lutfhansah &lt;ariflutfhansah@gmail.com&gt;:</div>
+							</div>
+						</div>
+						<div id="th_1569c7c22caf0050" class="xh qm">
+							<div class="El"></div>
+							<div class="Ol">
+								<div class="Bg Ql" style="visibility: hidden;"></div>
+							</div>
+							<div class="Pl">
+								<div class="Xj">
+									<span id="ti_d_1569c7c22caf0050">Yesterday</span>
+								</div>
+								<div class="Ig Fl">
+									<span id="ti_f_1569c7c22caf0050"><b>Riki dari Projects.co.id</b></span>
+								</div>
+							</div>
+							<div class="im">
+								<div class="M j Nl">
+									<div class="V j cb Ml">
+										<input type="checkbox" name="cek" class="checkbox-email" value="trus">
+									</div>
+								</div>
+								<div class="M j Ll">
+									<div class="V j mm pm"></div>
+								</div>
+								<div class=" Ig Gl" id="ti_s_1569c7c22caf0050">
+									<span>Update Juli 2016</span>
+								</div>
+							</div>
+							<div class="jm">
+								<div class="Jl"></div>
+								<div class="Ig Hl" id="ti_b_1569c7c22caf0050">Merdeka, Teman-Teman! Merdeka! Mumpung masih dalam suasana merayakan hari kemerdekaan kita nih :) Berikut ini adalah update untuk Juli 2016: Secure Code yang Lebih Reliable Seperti diketahui, demi</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="settings">
+		<!-- Header -->
+		<div class="fh">
+			<div class="Vm">
+				<div class="fc Cm Pm Rc qc Sc" id="cvtbt" style="width: 100%;">
+					<div class="kc">
+						<div class="back-menu M j T b hc is Le">
+							<div class="V j Y Km Ig">Menu</div>
+						</div>
+					</div>
+					<div class="M j T b hc Nn q m" style="top: 7px;">
+						<div class="V Y Rx Ig">arif@edumail.id</div>
+					</div>
+					<div class="lc">
+						<div class="M j T b hc Om Ce">
+							<a href="#">
+								<div class="V j Y Km Ig">Apply</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Menu -->
+		<div id="mn_" class="Qg">
+			<div class="Sg" style="bottom: 0px;">
+				<div class="Kg">
+					<div class="Sk">
+						<div class="bl">Settings</div>
+						<div class="Nk ec Ig">
+							<div class="Hk"></div><div class="Pk"><div class="xg"></div></div>Edit Profile
+						</div>
+						<div class="Nk ec Ig">
+							<div class="Hk"></div><div class="Pk"><div class="vg"></div></div>Change password
+						</div>
+						<a href="login.html" style="color: #000; text-decoration: none;">
+							<div class="Nk ec Ig">
+								<div class="Hk"></div><div class="Pk"><div class="tg"></div></div>Logout
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="Tg"></div>
+			<div class="fc Cm Ug Rc qc Sc" id="mutbb" style="width: 100%; top: 44px;">
+				<div class="kc"></div>
+				<div class="zc" style="left: 0px; right: 0px;">
+					<div class=" Em ">
+						<div class="Ig">arif@edumail.id</div>
+					</div>
+				</div>
+				<div class="lc"></div>
+				<div class="Tc"></div>
+				<div class="Dn Hn In"> </div>
+			</div>
+			<div class="Hg">
+				<div class="Wg">
+					<div class="Gh">
+						<div class="Gh">View Edumail in:&nbsp;<b>Mobile</b> | <a href="https://mail.google.com/mail/mu/mp/958/#" onclick="_e(event, &#39;oc&#39;)">Older version</a> | <a href="https://mail.google.com/mail/mu/mp/958/#" onclick="_e(event, &#39;pc&#39;)">Desktop</a></div>
+						<div class="Gh Hh">
+							<span dir="ltr">&copy 2016 Edumail</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.zd').click(function(){
+				$('#menu').slideToggle("slow","swing",0);
+				$('#inbox').css('display', 'none');
+			});
+			$('.go-settings').click(function(){
+				$('#settings').slideToggle("slow","swing",0);
+				$('#menu').css('display', 'none');
+			});
+			$('.back-menu').click(function(){
+				$('#menu').slideToggle("slow","swing",0);
+				$('#settings').css('display', 'none');
+			});
+			$('.inbox-link').click(function(){
+				$('#menu').css('display', 'none');
+				$('#inbox').css('display', 'block');
+			});
+		}); 
+	</script>
+</body>
 </html>
