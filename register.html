@@ -42,10 +42,14 @@
                   <fieldset>
                     <legend><strong>Name</strong></legend>
                     <label id="firstname-label" class="firstname">
-                      <input type="text" value="" name="FirstName" id="FirstName" placeholder="First">
+                      <input type="text" value="" name="FirstName" id="FirstName" placeholder="First" ng-model="fname" required>
+                      <span style="color:red" ng-show="myForm.fname.$dirty">
+                      <span ng-show="myForm.fname.$error.required">Email is required.</span>
                     </label>
                     <label id="lastname-label" class="lastname">
-                      <input type="text" value="" name="LastName" id="LastName" placeholder="Last">
+                      <input type="text" value="" name="LastName" id="LastName" placeholder="Last" ng-model="lname" required>
+                      <span style="color:red" ng-show="myForm.lname.$dirty">
+                      <span ng-show="myForm.lname.$error.required">Email is required.</span>
                     </label>
                   </fieldset>
                 </div>
@@ -89,7 +93,7 @@
                     </label>
                   </fieldset>
                 </div>
-                <input id="signin" name="signin" class="button-signin submit" type="submit" value="Continue" ng-disabled="myForm.email.$dirty && myForm.email.$invalid && myForm.password.$dirty && myForm.repassword.$dirty">
+                <input id="signin" name="signin" class="button-signin submit" type="submit" value="Continue" ng-disabled="myForm.fname.$dirty && myForm.lname.$dirty && myForm.email.$dirty && myForm.email.$invalid && myForm.password.$dirty && myForm.repassword.$dirty">
               </form>
             </div>
           </div>
