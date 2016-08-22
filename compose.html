@@ -11,107 +11,16 @@
     <meta name="author" content="Edumail">
     <!-- Mandatory Files -->
     <link rel="shortcut icon" href="assets/images/brand_01.png">
+    <link rel="stylesheet" href="assets/css/styles.css"> <!-- Base -->
     <!-- Logo -->
     <link rel="stylesheet" href="assets/css/mail.css"> <!-- Base -->
     <!-- Style Level Files -->
     <script src="assets/js/jquery-1.12.3.min.js"></script>
-    <script src="assets/js/angular.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<div class="menu" style="width: 100%; height: 100%;">
-		<!-- Header -->
-		<div class="fh">
-			<div class="Vm">
-				<div class="fc Cm Pm Rc qc Sc" id="mutbt" style="width: 100%;">
-					<div class="Tc"></div>
-					<div class="kc"></div>
-					<div class="zc" style="left: 0px; right: 42px;">
-						<div class="Bc" style="width: 42px;"></div>
-						<div class="Mn f"></div>
-						<div class="M j T b hc Nn q m">
-							<div class="V Y Rx Ig">arif@edumail.id</div>
-						</div>
-					</div>
-					<div class="lc">
-						<div class="M j T b hc Jm Gm">
-							<div class="V j Ud"></div>
-						</div>
-					</div>
-					<div class="Tc"></div>
-					<div class="Dn Hn"></div>
-				</div>
-			</div>
-		</div>
-		<!-- Menu -->
-		<div id="mn_" class="Qg">
-			<div class="Sg" style="bottom: 0px;">
-				<div class="Kg">
-					<div class="Sk">
-						<div class="bl">Inbox</div>
-						<div class="inbox-link Nk ec Ig">
-							<div class="Vk undefined" style="background:#737373;color:">10</div><div class="Hk"></div><div class="Pk"><div class="tg"></div></div>Primary
-						</div>
-						<div class="Nk ec Ig">
-							<div class="Hk"></div><div class="Pk"><div class="xg"></div></div>Social
-						</div>
-						<div class="Nk ec Ig">
-							<div class="Hk"></div><div class="Pk"><div class="vg"></div></div>Promotions
-						</div>
-						<div class="bl">Labels</div>
-						<div class="Nk al ec">
-							<div class="Hk"></div>Important
-						</div>
-						<div class="Nk al ec">
-							<div class="Hk"></div>
-							<div class="Qk">Starred</div>
-						</div>
-						<div class="Nk al ec">
-							<div class="Hk"></div>
-							<span>Sent Mail</span>
-						</div>
-						<div class="Nk al ec">
-							<div class="Hk"></div>
-							<span>Drafts</span>
-						</div>
-						<div class="Nk al ec">
-							<div class="Hk"></div>
-							<span>All Mail</span>
-						</div>
-						<div class="Nk al ec">
-							<div class="Hk"></div>
-							<span>Trash</span>
-						</div>
-						<div class="Nk al ec">
-							<div class="Hk"></div>
-							<span>Spam</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="Tg"></div>
-			<div class="fc Cm Ug Rc qc Sc" id="mutbb" style="width: 100%;">
-				<div class="kc"></div>
-				<div class="zc" style="left: 0px; right: 0px;">
-					<div class=" Em ">
-						<div class="Ig">arif@edumail.id</div>
-					</div>
-				</div>
-				<div class="lc"></div>
-				<div class="Tc"></div>
-				<div class="Dn Hn In"> </div>
-			</div>
-			<div class="Hg">
-				<div class="Wg">
-					<div class="Gh">
-						<div class="Gh">View Edumail in:&nbsp;<b>Mobile</b> | <a href="https://mail.google.com/mail/mu/mp/958/#" onclick="_e(event, &#39;oc&#39;)">Older version</a> | <a href="https://mail.google.com/mail/mu/mp/958/#" onclick="_e(event, &#39;pc&#39;)">Desktop</a></div>
-						<div class="Gh Hh">
-							<span dir="ltr">&copy 2016 Edumail</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 	<div id="compose">
 		<!-- Header -->
 		<div class="fh">
@@ -157,7 +66,8 @@
 							</div>-->
 							<div id="cmsb_composeto">
 								<div id="cmcc_composeto" class="xr" style="padding-left: 21px;">
-									<input class="Ym zs" id="composeto" type="text" style="width: 85%;">
+									<div class="all-mail"></div>
+									<input type="text" name="email" class="enter-mail-id" style="width: 100%;" placeholder="Enter the email id ..">
 								</div>
 							</div>
 						</div>
@@ -180,7 +90,7 @@
 								</div>-->
 								<div id="cmsb_composecc">
 									<div id="cmcc_composecc" class="xr" style="padding-left: 25px;">
-										<input class="Ym zs" id="composecc" type="text" style="width: 85%;">
+										<input class="Ym zs" id="composecc" type="text" style="width: 100%;">
 									</div>
 								</div>
 							</div>
@@ -233,5 +143,6 @@
 			</div>
 		</div>
 	</div>
+	<script src="assets/js/compose.js"></script>
 </body>
 </html>
