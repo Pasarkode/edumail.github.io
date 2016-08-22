@@ -44,12 +44,12 @@
                     <label id="firstname-label" class="firstname">
                       <input type="text" value="" name="FirstName" id="FirstName" placeholder="First" ng-model="fname" required>
                       <span style="color:red" ng-show="myForm.fname.$dirty">
-                      <span ng-show="myForm.fname.$error.required">Email is required.</span>
+                      <span ng-show="myForm.fname.$error.required">First Name is required.</span>
                     </label>
                     <label id="lastname-label" class="lastname">
                       <input type="text" value="" name="LastName" id="LastName" placeholder="Last" ng-model="lname" required>
                       <span style="color:red" ng-show="myForm.lname.$dirty">
-                      <span ng-show="myForm.lname.$error.required">Email is required.</span>
+                      <span ng-show="myForm.lname.$error.required">Last Name is required.</span>
                     </label>
                   </fieldset>
                 </div>
@@ -57,11 +57,10 @@
                   <fieldset>
                     <label id="username-label">
                       <strong>Choose your email</strong>
-                      <input type="email" maxlength="30" autocomplete="off" name="email" id="email" value="" ng-model="email" required>
+                      <input type="text" maxlength="30" autocomplete="off" name="email" id="email" value="" ng-model="email" required>
                       <span class="span-email">@edumail.id</span>
-                      <span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
-                      <span ng-show="myForm.myName.$touched && myForm.email.$error.required">Email is required.</span>
-                      <span ng-show="myForm.email.$error.email">Invalid email address.</span>
+                      <span style="color:red" ng-show="myForm.email.$dirty">
+                      <span ng-show="myForm.myForm.$touched && myForm.email.$error.required">Email is required.</span>
                     </label>
                   </fieldset>
                 </div>
@@ -81,6 +80,8 @@
                     <label id="confirm-pass-label">
                       <strong>Confirm your password</strong>
                       <input type="password" name="re-password" id="password" value="" ng-model="repassword" required>
+                      <span style="color:red" ng-show="myForm.repassword.$dirty">
+                      <span ng-show="myForm.repassword.$error.required">Insert again password</span>
                     </label>
                   </fieldset>
                 </div>
@@ -88,12 +89,14 @@
                   <fieldset>
                     <label id="phone-label">
                       <strong>Mobile Phone</strong>
-                      <input type="tel" name="phone" id="phone" value="" maxlength="18" onkeypress='return event.charCode >= 0 && event.charCode <= 57'>
+                      <input type="tel" name="phone" id="phone" value="" maxlength="18" onkeypress='return event.charCode >= 0 && event.charCode <= 57' ng-model="phone" required>
                       <span class="span-phone">+62</span>
+                      <span style="color:red" ng-show="myForm.phone.$dirty">
+                      <span ng-show="myForm.phone.$error.required">Mobile Phone is required.</span>
                     </label>
                   </fieldset>
                 </div>
-                <input id="signin" name="signin" class="button-signin submit" type="submit" value="Continue" ng-disabled="myForm.fname.$dirty && myForm.lname.$dirty && myForm.email.$dirty && myForm.email.$invalid && myForm.password.$dirty && myForm.repassword.$dirty">
+                <input id="signin" name="signin" class="button-signin submit" type="submit" value="Continue" ng-disabled="myForm.fname.$dirty && myForm.lname.$dirty && myForm.email.$dirty && myForm.email.$invalid && myForm.password.$dirty && myForm.repassword.$dirty && myForm.phone.$dirty">
               </form>
             </div>
           </div>
