@@ -289,6 +289,21 @@ input {
 	width: 14px;
 	height: 14px;
 }
+input.glyphicon {
+	padding: 0;
+}
+.glyphicon:before {
+ visibility: visible;
+ color: #777;
+ font-size: 24px;
+}
+.glyphicon.glyphicon-star-empty:checked:before {
+   content: "\e006";
+   color: #FFD153;
+}
+input[type=checkbox].glyphicon{
+    visibility: hidden;
+}
 /*
   Compose Page
 -------------------------------------*/
@@ -335,4 +350,8 @@ span.to-input {
     padding-top: 6px;
     padding-bottom: 7px;
     margin-top: 23px;
+}
+input [type="file"] {
+	float: left !important;
+	width: 30px !important;
 }
