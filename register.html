@@ -96,6 +96,13 @@
                     </label>
                   </fieldset>
                 </div>
+                <div class="form-element">
+                  <fieldset>
+                      <input type="checkbox" class="agree" name="agree" value="agree" ng-model="agree" required="">i agree with the terms and conditions<br/>
+                      <span style="color:red" ng-show="myForm.agree.$dirty">
+                      <span ng-show="myForm.agree.$error.required">You must agree with terms and condition</span>
+                  </fieldset>
+                </div>
                 <input id="signin" name="signin" class="button-signin submit" type="submit" value="Continue" ng-disabled="myForm.fname.$dirty && myForm.lname.$dirty && myForm.email.$dirty && myForm.email.$invalid && myForm.password.$dirty && myForm.repassword.$dirty && myForm.phone.$dirty">
               </form>
             </div>

@@ -151,9 +151,6 @@ input:-webkit-autofill {
     width: 133px;
     margin-right: 5px;
 }
-.firstname strong {
-	display: none;
-}
 .firstname .placeholder-text {
 	position: absolute;
 	top: 11px;
@@ -203,6 +200,11 @@ input {
 #phone {
 	padding-left: 40px;
 	font-size: 14px;
+}
+.agree {
+	float: left;
+	width: 15px;
+	height: 12px;
 }
 .sign-up select {
 	-webkit-appearance: none;
