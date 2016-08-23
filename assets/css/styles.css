@@ -17,6 +17,7 @@
     -webkit-font-smoothing: antialiased;
 }
 .hidden-small {
+	margin-top: 20px;
 	margin-bottom: 30px;
 	font-family: 'Open Sans', arial;
     -webkit-font-smoothing: antialiased;
@@ -157,7 +158,7 @@ input:-webkit-autofill {
 	left: 10px;
 	color: #999;
 }
-input {
+input [type="text"], input [type="email"], input [type="password"], {
 	position: relative;
 	width: 100%;
 	height: 37px;
@@ -181,7 +182,7 @@ input {
 	margin-top: 0;
 	margin-bottom: 0;
 }
-.span-email, .pass-unhide {
+.span-email, .pass-unhide, .pass-unhide2 {
 	position: absolute;
 	top: 37px;
 	right: 10px;
@@ -262,22 +263,34 @@ input {
 .verification-message {
 	font-size: 16px;
 }
-.verification-warn {
+.verification-warn, .warn-digit {
 	color: #737373;
+}
+.warn-digit {
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+.warn-digit img {
+	width: 25px;
+	vertical-align: middle;
 }
 .box-login .inputs {
 	display: inline-block;
-	width: 57px;
-	height: 57px;
-	margin: 20px 5px 40px 0;
+	width: 35px;
+	height: 35px;
+	margin: 20px 5px 20px 0;
 	font-size: 30px;
 	text-align: center;
 	border: none;
-	border-bottom: 1px solid #d9d9d9;
-	background-color: #f7f7f7;
 }
 .box-login .inputs:last-of-type {
 	margin-right: 0;
+}
+.resend-code {
+	text-align: center;
+}
+.resend-code a {
+	color: #3079ed;
 }
 /*
   Inbox Page
@@ -302,7 +315,6 @@ input.glyphicon {
    color: #FFD153;
 }
 .glyphicon::after {
-   content: "<- BORING!";
    color: red;
 }
 input[type=checkbox].glyphicon{
@@ -359,6 +371,40 @@ input [type="file"] {
 	float: left !important;
 	width: 30px !important;
 }
+.inputWrapper {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    /*Using a background color, but you can use a background image to represent a button*/
+    background-color: #DDF;
+}
+
+.fileInput {
+    cursor: pointer;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    right: 0;
+    /*This makes the button huge so that it can be clicked on*/
+    font-size:50px;
+    text-indent: -9999px;
+}
+.hidden {
+    /*Opacity settings for all browsers*/
+    opacity: 0;
+    -moz-opacity: 0;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0)
+}
+
+
+/*Dynamic styles*/
+.inputWrapper:hover {
+    background-color: #FDD;
+}
+.inputWrapper.clicked {
+    background-color: #A66;
+}
+
 /*
   Inside Page
 -------------------------------------*/
@@ -373,4 +419,10 @@ input [type="file"] {
 }
 .Tm {
     min-width: 25px !important;
+}
+/*
+  Search Page
+-------------------------------------*/
+#search {
+	display: none;
 }

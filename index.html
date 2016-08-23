@@ -25,48 +25,47 @@
     <header class="header-login">
       <div class="header-inner clearfix">
         <div class="logo-login">
-          <img src="https://ssl.gstatic.com/images/branding/googlelogo/2x/googlelogo_color_112x36dp.png" alt="Edumail"/>
+          <img src="assets/images/logo.png" alt="Edumail"/>
         </div>
       </div>
     </header>
     <main class="main-login">
       <div class="main-inner">
         <div class="tag-banner">
-          <h2 class="hidden-small">Sign in to use Edumail</h1>
+          <h2 class="hidden-small">Masuk untuk menggunakan Edumail</h1>
         </div>
         <div class="box-login">
-          <span class="error-message" align="center">Your email or password is incorrect</span>
+          <span class="error-message" align="center">Email atau password Anda salah</span>
           <form action="" name="myForm">
             <div class="form-element">
               <fieldset>
                 <label id="username-label">
-                  <strong>Your email</strong>
+                  <strong>Email/Username</strong>
                   <input type="email" maxlength="30" autocomplete="off" name="email" id="email" value="" placeholder="Your email" ng-model="email" required>
                   <span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
-                  <span ng-show="myForm.email.$error.required">Email is required.</span>
-                  <span ng-show="myForm.email.$error.email">Invalid email address.</span>
+                  <span ng-show="myForm.email.$error.required">Field email tidak boleh kosong.</span>
+                  <span ng-show="myForm.email.$error.email">Alamat email salah.</span>
                 </label>
               </fieldset>
             </div>
             <div class="form-element">
               <fieldset>
                 <label id="password-label">
-                  <strong>Your password</strong>
+                  <strong>Kata Sandi</strong>
                   <input type="password" name="password" id="password" value="" placeholder="Password" ng-model="password" required>
                   <span class="pass-unhide"><img src="assets/images/eye_icon.png"></span>
                   <span style="color:red" ng-show="myForm.password.$dirty">
-                  <span ng-show="myForm.password.$error.required">Password is required.</span>
+                  <span ng-show="myForm.password.$error.required">Field password tidak boleh kosong.</span>
                 </label>
               </fieldset>
             </div>
-            <input id="signin" name="signin" class="button-signin submit" type="submit" value="Sign in" ng-disabled="myForm.email.$dirty && myForm.email.$invalid && myForm.password.$dirty">
+            <input id="signin" name="signin" class="button-signin submit" type="submit" value="Masuk" ng-disabled="myForm.email.$dirty && myForm.email.$invalid && myForm.password.$dirty">
           </form>
           <div class="forgot-btn">
-            <a href="forgot-password.html">Forgot password?</a>
+            <a href="forgot-password.html">Lupa password?</a>
           </div>
         </div>
-        <a class="btn-register" href="register.html">Create account</a>
-        <p class="tagline">One Edumail Account for everything task</p>
+        <a class="btn-register" href="register.html">Buat akun</a>
       </div>
     </main>
     <footer class="footer-login">

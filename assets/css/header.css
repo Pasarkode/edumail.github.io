@@ -8,15 +8,14 @@
 .header-inner {
   padding-left: 10px;
   padding-right: 10px;
+  margin-bottom: 30px;
 }
 .logo-login {
-  width: 116px;
-  height: 38px;
-  margin: 20px auto;
+  width: 190px;
+  margin: 30px auto;
 }
 .logo-login img {
-  width: 116px;
-  height: 38px;
+  width: 190px;
 }
 /*
   Register Page

@@ -15,8 +15,37 @@
     <!-- Logo -->
     <link rel="stylesheet" href="assets/css/mail.css"> <!-- Base -->
     <!-- Style Level Files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/fileinput.css">
     <script src="assets/js/jquery-1.12.3.min.js"></script>
+    <script src="assets/js/fileinput.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <style>
+    	.btn-primary {
+    		background-color: #fff;
+    		border-color: #ccc;
+    		border-left: none;
+    		-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    		box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    	}
+    	.btn-primary:active {
+    		background-color: #fff;
+    		border-color: #ccc;
+    		border-left: none;
+    		-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    		box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    	}
+    	.btn-primary:hover {
+    		background-color: #fff;
+    		border-color: #ccc;
+    		border-left: none;
+    		-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    		box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    	}
+    	.form-control {
+		    height: 43px;
+		}
+    </style>
 </head>
 <body>
 	<div id="compose">
@@ -89,7 +118,7 @@
 								<div id="cmsb_composecc">
 									<div id="cmcc_composecc" class="xr" style="padding-left: 25px;">
 										<div class="all-cc"></div>
-										<input type="text" name="email" class="enter-cc-id" style="width: 100%;">	
+										<input type="text" name="email" class="enter-cc-id" style="width: 100%;">
 									</div>
 								</div>
 							</div>
@@ -104,7 +133,8 @@
 								</div>-->
 								<div id="cmsb_composebcc">
 									<div id="cmcc_composebcc" class="xr" style="padding-left: 32px;">
-										<input class="Ym zs" id="composebcc" type="text" style="width: 85%;">
+										<div class="all-bcc"></div>
+										<input type="text" name="email" class="enter-bcc-id" style="width: 100%;">
 									</div>
 								</div>
 							</div>
@@ -132,8 +162,10 @@
 						<div id="cmccsubj" class="mr Er" style="height: 45px;">
 							<div id="cmal_cmcsubj" class="cn">Subject:</div>
 							<input id="cmcsubj" class="dn" style="width: 70%;" placeholder="Your Subject">
-							<input id="upload-file" type="file" name="upload"></input>
 						</div>
+		                <div class="form-group">
+		                    <input id="file-1" type="file" multiple class="file" data-overwrite-initial="false" data-min-file-count="2">
+		                </div>
 						<div class="Fr" id="cmcbodyc">
 							<div style="display: block;" class="an" contenteditable="true" id="cmcbody"></div>
 						</div>
@@ -144,5 +176,75 @@
 		</div>
 	</div>
 	<script src="assets/js/compose.js"></script>
+	<script>
+    $('#file-fr').fileinput({
+        language: 'fr',
+        uploadUrl: '#',
+        allowedFileExtensions : ['jpg', 'png','gif'],
+    });
+    $('#file-es').fileinput({
+        language: 'es',
+        uploadUrl: '#',
+        allowedFileExtensions : ['jpg', 'png','gif'],
+    });
+    $("#file-0").fileinput({
+        'allowedFileExtensions' : ['jpg', 'png','gif'],
+    });
+    $("#file-1").fileinput({
+        uploadUrl: '#', // you must set a valid URL here else you will get an error
+        overwriteInitial: false,
+        maxFileSize: 1000,
+        maxFilesNum: 10,
+        //allowedFileTypes: ['image', 'video', 'flash'],
+        slugCallback: function(filename) {
+            return filename.replace('(', '_').replace(']', '_');
+        }
+	});
+    /*
+    $(".file").on('fileselect', function(event, n, l) {
+        alert('File Selected. Name: ' + l + ', Num: ' + n);
+    });
+    */
+	$("#file-3").fileinput({
+		showUpload: false,
+		showCaption: false,
+		browseClass: "btn btn-primary btn-lg",
+		fileType: "any",
+        previewFileIcon: "<i class='glyphicon glyphicon-king'></i>"
+	});
+	$("#file-4").fileinput({
+		uploadExtraData: {kvId: '10'}
+	});
+    $(".btn-warning").on('click', function() {
+        if ($('#file-4').attr('disabled')) {
+            $('#file-4').fileinput('enable');
+        } else {
+            $('#file-4').fileinput('disable');
+        }
+    });    
+    $(".btn-info").on('click', function() {
+        $('#file-4').fileinput('refresh', {previewClass:'bg-info'});
+    });
+    /*
+    $('#file-4').on('fileselectnone', function() {
+        alert('Huh! You selected no files.');
+    });
+    $('#file-4').on('filebrowse', function() {
+        alert('File browse clicked for #file-4');
+    });
+    */
+    $(document).ready(function() {
+        $("#test-upload").fileinput({
+            'showPreview' : false,
+            'allowedFileExtensions' : ['jpg', 'png','gif'],
+            'elErrorContainer': '#errorBlock'
+        });
+        /*
+        $("#test-upload").on('fileloaded', function(event, file, previewId, index) {
+            alert('i = ' + index + ', id = ' + previewId + ', file = ' + file.name);
+        });
+        */
+    });
+	</script>
 </body>
 </html>
