@@ -20,7 +20,7 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 	background-position: 0 -30px;
 }
 label.css-label {
-	background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_019807af606f0dea9eb28a8d35a7afc6.png);
+	background-image:url(../images/star.png);
 	background-size: 30px;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
