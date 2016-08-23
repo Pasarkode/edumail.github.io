@@ -322,9 +322,7 @@
         '<div class="input-group {class}">\n' +
         '   {caption}\n' +
         '   <div class="input-group-btn">\n' +
-        '       {remove}\n' +
         '       {cancel}\n' +
-        '       {upload}\n' +
         '       {browse}\n' +
         '   </div>\n' +
         '</div>';
@@ -377,10 +375,9 @@
         '</div>';
     tActions = '<div class="file-actions">\n' +
         '    <div class="file-footer-buttons">\n' +
-        '        {upload} {delete} {other}' +
+        '        {delete} {other}' +
         '    </div>\n' +
         '    {drag}\n' +
-        '    <div class="file-upload-indicator" title="{indicatorTitle}">{indicator}</div>\n' +
         '    <div class="clearfix"></div>\n' +
         '</div>';
     //noinspection HtmlUnknownAttribute
