@@ -23,8 +23,13 @@
     <style>
     	.btn-primary {
     		background-color: #fff;
+    		padding: 6.3px 12px;
     		border-color: #ccc;
+    		border-top: none;
     		border-left: none;
+    		border-right: none;
+    		border-bottom-color: #D9D9D9;
+    		border-radius: 0;
     		-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
     		box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
     	}
@@ -44,6 +49,13 @@
     	}
     	.form-control {
 		    height: 43px;
+		    border-radius: 0;
+		    border-left: none;
+		    border-top: none;
+		    border-bottom-color: #D9D9D9;
+		}
+		.file-preview {
+		    display: none;
 		}
     </style>
 </head>
@@ -164,7 +176,7 @@
 							<input id="cmcsubj" class="dn" style="width: 70%;" placeholder="Your Subject">
 						</div>
 		                <div class="form-group">
-		                    <input id="file-1" type="file" multiple class="file" data-overwrite-initial="false" data-min-file-count="2">
+		                    <input id="file-1" type="file" multiple class="file" data-overwrite-initial="false">
 		                </div>
 						<div class="Fr" id="cmcbodyc">
 							<div style="display: block;" class="an" contenteditable="true" id="cmcbody"></div>
@@ -177,19 +189,6 @@
 	</div>
 	<script src="assets/js/compose.js"></script>
 	<script>
-    $('#file-fr').fileinput({
-        language: 'fr',
-        uploadUrl: '#',
-        allowedFileExtensions : ['jpg', 'png','gif'],
-    });
-    $('#file-es').fileinput({
-        language: 'es',
-        uploadUrl: '#',
-        allowedFileExtensions : ['jpg', 'png','gif'],
-    });
-    $("#file-0").fileinput({
-        'allowedFileExtensions' : ['jpg', 'png','gif'],
-    });
     $("#file-1").fileinput({
         uploadUrl: '#', // you must set a valid URL here else you will get an error
         overwriteInitial: false,
@@ -200,11 +199,6 @@
             return filename.replace('(', '_').replace(']', '_');
         }
 	});
-    /*
-    $(".file").on('fileselect', function(event, n, l) {
-        alert('File Selected. Name: ' + l + ', Num: ' + n);
-    });
-    */
 	$("#file-3").fileinput({
 		showUpload: false,
 		showCaption: false,
@@ -212,38 +206,32 @@
 		fileType: "any",
         previewFileIcon: "<i class='glyphicon glyphicon-king'></i>"
 	});
-	$("#file-4").fileinput({
-		uploadExtraData: {kvId: '10'}
-	});
-    $(".btn-warning").on('click', function() {
-        if ($('#file-4').attr('disabled')) {
-            $('#file-4').fileinput('enable');
-        } else {
-            $('#file-4').fileinput('disable');
-        }
-    });    
-    $(".btn-info").on('click', function() {
-        $('#file-4').fileinput('refresh', {previewClass:'bg-info'});
-    });
-    /*
-    $('#file-4').on('fileselectnone', function() {
-        alert('Huh! You selected no files.');
-    });
-    $('#file-4').on('filebrowse', function() {
-        alert('File browse clicked for #file-4');
-    });
-    */
     $(document).ready(function() {
+    	var fileSelectEle = document.getElementById('file-1');
+    	fileSelectEle.onclick = charge;
+
+    	function charge()
+		{
+		    document.body.onfocus = function () { setTimeout(checkOnCancel, 100); };
+		}
+		function checkOnCancel()
+		{
+		    if(fileSelectEle.value.length == 0) $('.file-preview').css('display', 'none')
+		    else $('.file-preview').css('display', 'block');
+		    document.body.onfocus = null;
+		}
+
         $("#test-upload").fileinput({
             'showPreview' : false,
             'allowedFileExtensions' : ['jpg', 'png','gif'],
             'elErrorContainer': '#errorBlock'
         });
-        /*
-        $("#test-upload").on('fileloaded', function(event, file, previewId, index) {
-            alert('i = ' + index + ', id = ' + previewId + ', file = ' + file.name);
-        });
-        */
+        $('#file-1').click(function(){
+			$('.file-preview').css('display', 'block');
+		});
+		$('.fileinput-remove').click(function(){
+			$('.file-preview').css('display', 'none');
+		});
     });
 	</script>
 </body>
