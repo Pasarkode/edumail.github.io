@@ -47,6 +47,9 @@
     		-webkit-box-shadow: none;
     		box-shadow: none;
     	}
+    	.form-group {
+		    margin-bottom: 0;
+		}
     	.form-control {
 		    height: 43px;
 		    border-radius: 0;
@@ -194,7 +197,6 @@
     $("#file-1").fileinput({
         uploadUrl: '#', // you must set a valid URL here else you will get an error
         overwriteInitial: false,
-        maxFileSize: 1000,
         maxFilesNum: 10,
         //allowedFileTypes: ['image', 'video', 'flash'],
         slugCallback: function(filename) {
