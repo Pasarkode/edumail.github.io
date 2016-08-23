@@ -59,7 +59,14 @@
                 </label>
               </fieldset>
             </div>
-            <input id="signin" name="signin" class="button-signin submit" type="submit" value="Masuk" ng-disabled="myForm.email.$dirty && myForm.email.$invalid && myForm.password.$dirty">
+            <div class="form-element">
+              <fieldset>
+                  <input type="checkbox" class="agree" name="agree" value="agree">Biarkan saya tetap masuk<br/>
+              </fieldset>
+            </div>
+            <a href="inbox.html">
+              <input id="signin" name="signin" class="button-signin submit" type="submit" value="Masuk" ng-disabled="myForm.email.$dirty && myForm.email.$invalid && myForm.password.$dirty">
+            </a>
           </form>
           <div class="forgot-btn">
             <a href="forgot-password.html">Lupa password?</a>
@@ -80,6 +87,7 @@
     </footer>
     <script>
       $(document).ready(function() {
+        // Display input type passpord when click to text
         $(".pass-unhide").click(function() {
           if ($("#password").attr("type") == "password") {
             $("#password").attr("type", "text");
